@@ -1,3 +1,3 @@
 ---
-title: Welcome to my blog, bait
+title: Welcome to my blog, bait-it
 ---
