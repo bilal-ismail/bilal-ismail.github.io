@@ -1,7 +1,10 @@
 ---
-layout: default
+layout: page
 title: Contact
+permalink: /contact
+comments: false
 ---
+
 # Reach me
 |Platform|Address|
 |--|--|
