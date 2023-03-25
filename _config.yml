@@ -10,14 +10,3 @@ description: "You can ask me about cybersecurity and software engineering."
 include: ["_pages"]
 baseurl: /about
 url: https://bilal-ismail.github.io
-
-# Pagination 
-paginate: 6
-paginate_path: /page:num/
-
-# Other
-highlighter: none
-markdown: kramdown
-kramdown:
-   syntax_highlighter_opts:
-      disable : true
