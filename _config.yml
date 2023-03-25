@@ -5,8 +5,8 @@ theme: minima
 
 name: "Bilal Ismail"
 title: "Bilal Ismail"
-author: "bait"
-description: "Lean adoption and continuos learning practitioner\n\nYou can ask me about cloud, cybersecurity and software engineering."
+author: "Lean adoption and continuos learning practitioner"
+description: "You can ask me about cloud, cybersecurity and software engineering."
 include: ["_pages"]
 exclude: ["_posts"]
 baseurl: /
