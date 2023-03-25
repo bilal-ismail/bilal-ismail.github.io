@@ -10,4 +10,4 @@ description: "You can ask me about cybersecurity and software engineering."
 include: ["_pages"]
 exclude: ["_posts"]
 baseurl: /
-url: https://bilal-ismail.github.io
+url: https://bilal-ismail.github.io/about
