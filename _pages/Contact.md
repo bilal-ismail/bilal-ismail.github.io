@@ -1,11 +1,10 @@
 ---
 layout: page
-title: Contact
+title: Reach me
 permalink: /contact
 comments: false
 ---
 
-# Reach me
 
 
 |Linkedin|linkedin.com/in/bilal-ismail|
