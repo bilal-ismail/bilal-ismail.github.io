@@ -8,5 +8,6 @@ title: "Bilal Ismail"
 author: "bait"
 description: "You can ask me about cybersecurity and software engineering."
 include: ["_pages"]
-baseurl: /about
+exclude: ["_posts"]
+baseurl: /
 url: https://bilal-ismail.github.io
