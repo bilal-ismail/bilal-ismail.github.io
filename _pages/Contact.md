@@ -6,5 +6,5 @@ comments: false
 ---
 
 
-|Linkedin| linkedin.com/in/bilal-ismail|
+|Linkedin| [Bilal Ismail - Linkedin](linkedin.com/in/bilal-ismail-)|
 |Email| bilalahmedismail@yahoo.com|
