@@ -1,4 +1,4 @@
-- name: Device Analyser Toolkit
+name: Device Analyser Toolkit
 type: academic
 domain: security
 start: 2024
@@ -8,7 +8,7 @@ solution: Plug-and-play hardware forensics toolkit with middleware
 outcome: MS thesis dissertation completed
 
 
-- name: Anomaly-Based Intrusion Detection System
+name: Anomaly-Based Intrusion Detection System
 type: academic
 domain: security
 start: 2018
