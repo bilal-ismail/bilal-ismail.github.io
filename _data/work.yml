@@ -1,0 +1,13 @@
+- role: Security Engineer
+organization: Example Corp
+location: Remote
+start: 2022
+end: Present
+domain: Security
+technologies:
+- Kubernetes
+- SIEM
+- Python
+highlights:
+- Built automated threat detection pipelines
+- Reduced incident response time by 40%
