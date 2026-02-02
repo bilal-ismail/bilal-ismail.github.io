@@ -1,8 +1,22 @@
 - title: BSc Computer Science
 institution: Example University
-start: 2018
-end: 2022
+start: 2014
+end: 2018
+domain: Foundations
 focus:
-- Networks
+- Computer Networks
 - Operating Systems
+- Data Structures
+
+- title: MSc Information Security
+institution: National University of Sciences and Technology (NUST)
+start: 2020
+end: 2024
+domain: Specialization
+focus:
+- Network Security
+- Computer Forensics
 - Cryptography
+- Malware reversing
+- Pen-Testing,  Exploitation and Defense
+
