@@ -1,4 +1,4 @@
-- role: L1 / Tier 1 Support Analyst
+role: L1 / Tier 1 Support Analyst
 organization: Ibex Global Solutions Inc.
 location: Karachi, Pakistan
 start: 2024
@@ -14,7 +14,7 @@ highlights:
 - Resolved and escalated complex incidents efficiently
 
 
-- role: Networking / Technical Associate
+role: Networking / Technical Associate
 organization: xFlow Research Pvt Ltd
 location: Islamabad, Pakistan
 start: 2024
@@ -31,7 +31,7 @@ highlights:
 - Conducted Linux kernel networking research
 
 
-- role: Automotive ECU Cybersecurity Intern
+role: Automotive ECU Cybersecurity Intern
 organization: Sumitomo Electric Industries (SEI)
 location: Yokkaichi, Japan
 start: 2023
@@ -47,7 +47,7 @@ highlights:
 - Performed firmware flashing and IDS simulations
 
 
-- role: Cybersecurity Analyst
+role: Cybersecurity Analyst
 organization: Lynx Info Sec
 location: Rawalpindi, Pakistan
 start: 2022
@@ -64,7 +64,7 @@ highlights:
 - Deployed containerized SOC solutions
 
 
-- role: Research Associate (Open RAN Security)
+role: Research Associate (Open RAN Security)
 organization: Bitsym Pvt Ltd
 location: Islamabad, Pakistan
 start: 2022
@@ -80,5 +80,17 @@ highlights:
 - Participated in security workgroups
 
 
-- role: Software Engineer / Research Associate
+role: Software Engineer / Research Associate
+organization: Air University (SPRC)
+location: Islamabad, Pakistan
+start: 2019
+end: 2022
+domain: communication
+summary: Secure, low-latency distributed systems for avionics and real-time environments.
+technologies:
+- TCP/UDP
+- MIL-STD-1553
+- Distributed Systems
+highlights:
+- Designed secure avionics communication protocols
 - Built real-time distributed applications
