@@ -1,13 +1,46 @@
-- role: Security Engineer
-organization: Example Corp
+- role: Network & ICT Engineer
+organization: Telecom Provider Ltd
+location: Onsite
+start: 2017
+end: 2019
+domain: ICT
+summary: Early-career role focused on enterprise networking and communications infrastructure.
+technologies:
+- Routing & Switching
+- VoIP
+- Linux
+highlights:
+- Designed and maintained enterprise LAN/WAN setups
+- Supported mission-critical communication systems
+
+
+- role: Cybersecurity Engineer
+organization: SecureOps Inc
+location: Hybrid
+start: 2019
+end: 2022
+domain: Security
+summary: Shift into defensive security, automation, and incident response.
+technologies:
+- SIEM
+- Python
+- Threat Modeling
+highlights:
+- Automated log analysis pipelines
+- Reduced incident response time significantly
+
+
+- role: AI & Automation Engineer
+organization: Robotics Startup
 location: Remote
 start: 2022
 end: Present
-domain: Security
+domain: AI & Robotics
+summary: Building intelligent, automated systems spanning software and hardware.
 technologies:
-- Kubernetes
-- SIEM
 - Python
+- ROS
+- Computer Vision
 highlights:
-- Built automated threat detection pipelines
-- Reduced incident response time by 40%
+- Developed autonomous decision systems
+- Integrated AI models with robotic platforms
