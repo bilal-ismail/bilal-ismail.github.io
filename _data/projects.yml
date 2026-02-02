@@ -1,0 +1,14 @@
+- name: Autonomous Inspection Drone
+type: Startup
+domain: Robotics
+period: 2024
+stack:
+- ROS
+- Python
+- Computer Vision
+problem: Manual inspection was slow and unsafe
+solution: Autonomous drone-based inspection system
+outcome: Prototype deployed and demoed to partners
+links:
+github: https://github.com/example
+demo: https://example.com
