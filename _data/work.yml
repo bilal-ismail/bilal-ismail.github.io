@@ -1,46 +1,84 @@
-- role: Network & ICT Engineer
-organization: Telecom Provider Ltd
-location: Onsite
-start: 2017
-end: 2019
-domain: ICT
-summary: Early-career role focused on enterprise networking and communications infrastructure.
+- role: L1 / Tier 1 Support Analyst
+organization: Ibex Global Solutions Inc.
+location: Karachi, Pakistan
+start: 2024
+end: 2024
+domain: security
+summary: Tier-1 IT and security support for Walmart.com in a 24/7 enterprise SOC environment.
 technologies:
-- Routing & Switching
-- VoIP
+- Incident Management
+- SLA Monitoring
+- Security Operations
+highlights:
+- Achieved maximum SLA compliance
+- Resolved and escalated complex incidents efficiently
+
+
+- role: Networking / Technical Associate
+organization: xFlow Research Pvt Ltd
+location: Islamabad, Pakistan
+start: 2024
+end: 2024
+domain: ict
+summary: Enterprise and research-focused networking, automation, and kernel-level experimentation.
+technologies:
+- OSPF
+- BGP
+- Python
 - Linux
 highlights:
-- Designed and maintained enterprise LAN/WAN setups
-- Supported mission-critical communication systems
+- Automated monitoring with Python and Bash
+- Conducted Linux kernel networking research
 
 
-- role: Cybersecurity Engineer
-organization: SecureOps Inc
-location: Hybrid
-start: 2019
-end: 2022
-domain: Security
-summary: Shift into defensive security, automation, and incident response.
+- role: Automotive ECU Cybersecurity Intern
+organization: Sumitomo Electric Industries (SEI)
+location: Yokkaichi, Japan
+start: 2023
+end: 2023
+domain: security
+summary: Automotive ECU security research under a global R&D internship program.
 technologies:
-- SIEM
-- Python
-- Threat Modeling
+- AUTOSAR
+- CAN Bus
+- Embedded Security
 highlights:
-- Automated log analysis pipelines
-- Reduced incident response time significantly
+- Developed secure CAN gateway modules
+- Performed firmware flashing and IDS simulations
 
 
-- role: AI & Automation Engineer
-organization: Robotics Startup
-location: Remote
+- role: Cybersecurity Analyst
+organization: Lynx Info Sec
+location: Rawalpindi, Pakistan
 start: 2022
-end: Present
-domain: AI & Robotics
-summary: Building intelligent, automated systems spanning software and hardware.
+end: 2023
+domain: security
+summary: Offensive and defensive security engagements for client environments.
 technologies:
-- Python
-- ROS
-- Computer Vision
+- Nmap
+- Burp Suite
+- Metasploit
+- Docker
 highlights:
-- Developed autonomous decision systems
-- Integrated AI models with robotic platforms
+- Conducted penetration testing and malware analysis
+- Deployed containerized SOC solutions
+
+
+- role: Research Associate (Open RAN Security)
+organization: Bitsym Pvt Ltd
+location: Islamabad, Pakistan
+start: 2022
+end: 2022
+domain: communication
+summary: Research on ORAN security standards and Telco Cloud environments.
+technologies:
+- ORAN
+- VMware Telco Cloud
+- Docker
+highlights:
+- Deployed xApps and rApps
+- Participated in security workgroups
+
+
+- role: Software Engineer / Research Associate
+- Built real-time distributed applications
