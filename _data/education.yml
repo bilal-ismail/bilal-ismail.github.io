@@ -1,24 +1,27 @@
-- title: BSc Computer Science
-institution: Bahria University
-start: 2015
-end: 2019
-domain: Graduation
-focus:
-- Computer Networks
-- Operating Systems
-- Data Structures
-- Databases
-
-
-- title: MSc Information Security
-institution: National University of Sciences and Technology (NUST)
+- title: Master of Science in Information Security
+institution: NUST SEECS
+location: Islamabad, Pakistan
 start: 2020
 end: 2024
-domain: Specialization
+domain: security
 focus:
+- SOC Operations
+- Secure Software Development
+- Cloud Security
 - Network Security
 - Computer Forensics
 - Cryptography
 - Malware reversing
 - Pen-Testing,  Exploitation and Defense
 
+
+- title: Bachelor of Science in Computer Science
+institution: Bahria University
+location: Islamabad, Pakistan
+start: 2015
+end: 2019
+domain: foundations
+focus:
+- Computer Networks
+- Operating Systems
+- Data Structures
