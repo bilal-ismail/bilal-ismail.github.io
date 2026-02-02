@@ -1,14 +1,18 @@
-- name: Autonomous Inspection Drone
-type: Startup
-domain: Robotics
-period: 2024
-stack:
-- ROS
-- Python
-- Computer Vision
-problem: Manual inspection was slow and unsafe
-solution: Autonomous drone-based inspection system
-outcome: Prototype deployed and demoed to partners
-links:
-github: https://github.com/example
-demo: https://example.com
+- name: Device Analyser Toolkit
+type: academic
+domain: security
+start: 2024
+end: 2024
+problem: Lack of portable hardware forensics tools for custom boards
+solution: Plug-and-play hardware forensics toolkit with middleware
+outcome: MS thesis dissertation completed
+
+
+- name: Anomaly-Based Intrusion Detection System
+type: academic
+domain: security
+start: 2018
+end: 2018
+problem: Ineffective signature-only IDS approaches
+solution: Statistical and ML-based anomaly detection system
+outcome: BS thesis dissertation completed
