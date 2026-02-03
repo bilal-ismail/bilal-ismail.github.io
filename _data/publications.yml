@@ -1,0 +1,18 @@
+- name: Device Analyser Toolkit
+  type: academic - MS Thesis Dissertation
+  domain: security
+  start: 2023
+  finish: 2024
+  problem: Lack of portable hardware forensics tools for custom boards
+  solution: Plug-and-play hardware forensics toolkit with middleware
+  outcome: MS thesis dissertation completed and defended
+
+
+- name: Anomaly-Based Intrusion Detection System
+  type: academic - BS Final Year Project (FYP)
+  domain: security
+  start: 2017
+  finish: 2018
+  problem: Ineffective signature-only IDS approaches
+  solution: Statistical and ML-based anomaly detection system
+  outcome: BS project completed and defended
