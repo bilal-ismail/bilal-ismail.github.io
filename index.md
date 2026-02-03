@@ -3,12 +3,22 @@ layout: page
 title: Home
 ---
 
-## ICT Engineer - networking, security and adapting with the applications of AI, automation and robotics
- 
-## My work spans over public enterprises for network programming and secure real-time applications. Moreover, skills for designing and configuring network topologies had been acquired through ambition. Currently, actively adopting artificial intelligence, with a growing focus on automation and robotics. Over time, my trajectory has moved from communication infrastructure to intelligent systems — emphasizing reliability, safety, and real-world deployment rather than purely theoretical solutions.
+## ICT Engineer — Networking, Security, AI & Robotics
+
+My work spans public and enterprise environments, focusing on network programming, secure real-time systems, and resilient infrastructure. Over time, I have transitioned from communication-centric systems toward intelligent, automated solutions, with a growing focus on artificial intelligence and robotics.
+
+This progression reflects a shift from building and securing networks to designing systems that can perceive, decide, and act reliably in real-world environments.
+
+---
 
 ## Wall of Work / Wall of Impact
 
-## My work spans enterprise networking, defensive security, and applied artificial intelligence, with a growing focus on automation and robotics. Over time, my trajectory has moved from communication infrastructure to intelligent systems — emphasizing reliability, safety, and real-world deployment rather than purely theoretical solutions.
+This section highlights selected projects, research efforts, and technical outcomes across networking, cybersecurity, AI, and robotics. Each represents a concrete step in applying theory to practical, deployable systems.
+
+*(Images and highlights will be added here.)*
+
+---
 
 ## Call to Explore
+
+Explore my experience, education, publications, certifications, and affiliations to see how these domains connect across time, technology, and real-world impact.
