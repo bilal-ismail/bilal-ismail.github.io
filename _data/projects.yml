@@ -1,18 +1,17 @@
-- name: Device Analyser Toolkit
-  type: academic
-  domain: security
-  start: 2024
-  finish: 2024
-  problem: Lack of portable hardware forensics tools for custom boards
-  solution: Plug-and-play hardware forensics toolkit with middleware
-  outcome: MS thesis dissertation completed
+- name: Variable Power Supply 220v AC -> 12v DC
+  type: academic project
+  domain: Basic Electronics
+  finish: 2015
+  problem: Hands on understanding of variable power supplies, regulators and transformers
+  solution: use of capacitors for signal filtering and reverse protection through diodes
+  outcome: self-designed and implemented on spotted vero board with soldering iron practice
 
-
-- name: Anomaly-Based Intrusion Detection System
+- name: P2
   type: academic
-  domain: security
-  start: 2018
-  finish: 2018
-  problem: Ineffective signature-only IDS approaches
-  solution: Statistical and ML-based anomaly detection system
-  outcome: BS thesis dissertation completed
+  domain: _
+  start: 2016
+  finish: _
+  problem: _
+  solution: _
+  outcome: _
+
