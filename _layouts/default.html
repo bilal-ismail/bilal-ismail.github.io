@@ -5,36 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }}</title>
 
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="{{ 'assets/css/style.css' | relative_url }}">
+  <!-- Correct CSS -->
+  <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}">
   
   <!-- Optional: Favicon -->
   <link rel="icon" href="{{ 'assets/images/favicon.ico' | relative_url }}">
 </head>
 <body>
   <!-- Header / Navigation -->
-  <header style="background:#222; color:#fff; padding:1rem;">
-    <div style="max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center;">
-      <h1><a href="{{ '/' | relative_url }}" style="color:#fff; text-decoration:none;">Bilal Ismail</a></h1>
+  <header>
+    <div style="max-width:900px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; padding:1rem 1.25rem;">
+      <h1><a href="{{ '/' | relative_url }}" style="color: var(--fg); text-decoration:none;">Bilal Ismail</a></h1>
       <nav>
-        <a href="{{ '/' | relative_url }}" style="color:#fff; margin-right:1rem;">Home</a>
-        <a href="{{ '/about/' | relative_url }}" style="color:#fff; margin-right:1rem;">About</a>
-        <a href="{{ '/contact/' | relative_url }}" style="color:#fff;">Contact</a>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+        <a href="{{ '/contact/' | relative_url }}">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- Main Content -->
-  <main style="padding:2rem; max-width:1200px; margin:0 auto;">
+  <main>
     {{ content }}
   </main>
 
   <!-- Footer -->
-  <footer style="background:#222; color:#fff; padding:1rem; text-align:center;">
+  <footer style="max-width:900px; margin:0 auto; padding:2rem 1.25rem; text-align:center; color: var(--muted); border-top:1px solid var(--border);">
     &copy; {{ site.time | date: "%Y" }} Bilal Ismail. All rights reserved.
   </footer>
-
-  <!-- Optional JS -->
-  <script src="{{ 'assets/js/main.js' | relative_url }}"></script>
 </body>
 </html>
