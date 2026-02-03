@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>{{ page.title }} | {{ site.title }}</title>
-<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+
+  <!-- Link main CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <!-- Optional: add favicon -->
+  <link rel="icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
 </head>
 <body>
-{% include header.html %}
-<main>
-{{ content }}
-</main>
-{% include footer.html %}
+  <!-- Header / Navigation -->
+  <header style="background-color:#222; color:#fff; padding:1rem;">
+    <div class="container" style="max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center;">
+      <h1><a href="{{ '/' | relative_url }}" style="color:#fff; text-decoration:none;">My Site</a></h1>
+      <nav>
+        <a href="{{ '/' | relative_url }}" style="color:#fff; margin-right:1rem;">Home</a>
+        <a href="{{ '/about/' | relative_url }}" style="color:#fff; margin-right:1rem;">About</a>
+        <a href="{{ '/contact/' | relative_url }}" style="color:#fff;">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main style="padding:2rem; max-width:1200px; margin:0 auto;">
+    {{ content }}
+  </main>
+
+  <!-- Footer -->
+  <footer style="background-color:#222; color:#fff; padding:1rem; text-align:center;">
+    &copy; {{ site.time | date: "%Y" }} My Site. All rights reserved.
+  </footer>
 </body>
 </html>
-
-
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
-</head>
-<body>
-  {{ content }}
-</body>
-</html> -->
