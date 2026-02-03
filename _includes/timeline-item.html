@@ -1,7 +1,7 @@
 <div class="timeline-header">
-  <span class="timeline-period">
+  <!-- <span class="timeline-period">
     {{ item.start }}{% if item.finish %} – {{ item.finish }}{% endif %}
-  </span>
+  </span> -->
 
   <h2>
     {{ item.role | default: item.title | default: item.name }}
@@ -26,7 +26,7 @@
     {% endif %}
   </span>
 
-  <h2>
+  <!-- <h2>
     {% if include.item.role %}
       {{ include.item.role }}
     {% elsif include.item.title %}
@@ -34,13 +34,13 @@
     {% elsif include.item.name %}
       {{ include.item.name }}
     {% endif %}
-  </h2>
+  </h2> -->
 
-  {% if include.item.organization or include.item.institution %}
+  <!-- {% if include.item.organization or include.item.institution %}
     <div class="timeline-meta">
       {{ include.item.organization }}{{ include.item.institution }}
     </div>
-  {% endif %}
+  {% endif %} -->
 
 
   {% if include.item.institution %}
