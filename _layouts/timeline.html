@@ -1,13 +1,22 @@
 <section>
-<h1>{{ page.title }}</h1>
+  <h1>{{ page.title }}</h1>
 
+  {% case page.data_source %}
+    {% when "work" %}
+      {% assign items = site.data.work %}
+    {% when "education" %}
+      {% assign items = site.data.education %}
+    {% when "projects" %}
+      {% assign items = site.data.projects %}
+    {% when "hobbies" %}
+      {% assign items = site.data.hobbies %}
+  {% endcase %}
 
-{% assign items = site.data[page.data_source] | sort: 'start' | reverse %}
+  {% assign items = items | sort: "start" | reverse %}
 
-
-<div class="timeline">
-{% for item in items %}
-{% include timeline-item.html item=item %}
-{% endfor %}
-</div>
+  <div class="timeline">
+    {% for item in items %}
+      {% include timeline-item.html item=item %}
+    {% endfor %}
+  </div>
 </section>
