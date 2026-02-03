@@ -1,14 +1,53 @@
-<header>
-<nav>
-    <a href="/">Home</a>
-    <a href="/work">Work</a>
-    <a href="/education">Education</a>
-    <a href="/publications">Publications</a>
-    <a href="/patents">Patents</a>
-    <a href="/projects">Projects</a>
-    <a href="/affiliations">Affiliations</a>
-    <a href="/certifications">Certifications</a>
-    <a href="/hobbies">Hobbies</a>
-    <a href="/contact">Contact</a>
-</nav>
+<header class="site-header">
+  <nav class="nav">
+    <a href="{{ '/' | relative_url }}"
+       class="nav-link {% if page.url == '/' %}active{% endif %}">
+      Home
+    </a>
+
+    <a href="{{ '/work' | relative_url }}"
+       class="nav-link {% if page.url contains '/work' %}active{% endif %}">
+      Work
+    </a>
+
+    <a href="{{ '/education' | relative_url }}"
+       class="nav-link {% if page.url contains '/education' %}active{% endif %}">
+      Education
+    </a>
+
+    <a href="{{ '/publications' | relative_url }}"
+       class="nav-link {% if page.url contains '/publications' %}active{% endif %}">
+      Publications
+    </a>
+      
+    <a href="{{ '/patents' | relative_url }}"
+       class="nav-link {% if page.url contains '/patents' %}active{% endif %}">
+      Patents
+    </a>
+
+    <a href="{{ '/projects' | relative_url }}"
+       class="nav-link {% if page.url contains '/projects' %}active{% endif %}">
+      Projects
+    </a>
+
+    <a href="{{ '/affiliations' | relative_url }}"
+       class="nav-link {% if page.url contains '/affiliations' %}active{% endif %}">
+      Affiliations
+    </a>
+
+    <a href="{{ '/certifications' | relative_url }}"
+       class="nav-link {% if page.url contains '/certifications' %}active{% endif %}">
+      Certifications
+    </a>
+
+    <a href="{{ '/hobbies' | relative_url }}"
+       class="nav-link {% if page.url contains '/hobbies' %}active{% endif %}">
+      Hobbies
+    </a>
+
+      <a href="{{ '/contact' | relative_url }}"
+       class="nav-link {% if page.url contains '/contact' %}active{% endif %}">
+      Contact
+    </a>
+  </nav>
 </header>
