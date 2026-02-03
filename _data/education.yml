@@ -1,27 +1,27 @@
-title: Master of Science in Information Security
-institution: NUST SEECS
-location: Islamabad, Pakistan
-start: 2020
-finish: 2024
-domain: security
-focus:
-- SOC Operations
-- Secure Software Development
-- Cloud Security
-- Network Security
-- Computer Forensics
-- Cryptography
-- Malware reversing
-- Pen-Testing,  Exploitation and Defense
+- title: Master of Science in Information Security
+  institution: NUST SEECS
+  location: Islamabad, Pakistan
+  start: 2020
+  finish: 2024
+  domain: security
+  focus:
+  - SOC Operations
+  - Secure Software Development
+  - Cloud Security
+  - Network Security
+  - Computer Forensics
+  - Cryptography
+  - Malware reversing
+  - Pen-Testing,  Exploitation and Defense
 
 
-title: Bachelor of Science in Computer Science
-institution: Bahria University
-location: Islamabad, Pakistan
-start: 2015
-finish: 2019
-domain: foundations
-focus:
-- Computer Networks
-- Operating Systems
-- Data Structures
+- title: Bachelor of Science in Computer Science
+  institution: Bahria University
+  location: Islamabad, Pakistan
+  start: 2015
+  finish: 2019
+  domain: foundations
+  focus:
+  - Computer Networks
+  - Operating Systems
+  - Data Structures
