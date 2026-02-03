@@ -1,3 +1,7 @@
+/* --------------------
+   ROOT & LAYOUT
+-------------------- */
+
 html, body {
   height: 100%;
   margin: 0;
@@ -13,11 +17,17 @@ body {
   flex: 1;
 }
 
+/* --------------------
+   DESIGN TOKENS
+-------------------- */
+
 :root {
   --bg: #ffffff;
+  --surface: #f9fafb;
   --text: #111827;
   --muted: #6b7280;
   --border: #e5e7eb;
+  --accent: #2563eb;
 
   --ict: #2563eb;
   --security: #dc2626;
@@ -25,51 +35,78 @@ body {
   --robotics: #059669;
 }
 
+/* --------------------
+   GLOBAL
+-------------------- */
+
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  margin: 0;
   background: var(--bg);
   color: var(--text);
   line-height: 1.65;
 }
 
-/* NAV */
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* --------------------
+   HEADER / NAV
+-------------------- */
+
 header {
-  border-bottom: 1px solid var(--border);
   background: #fff;
+  border-bottom: 1px solid var(--border);
 }
-
-.site-footer {
-  padding: 1.5rem;
-  background: #111;
-  color: #aaa;
-  text-align: center;
-}
-
-
 
 nav {
   max-width: 1000px;
   margin: auto;
   padding: 1rem 2rem;
+  display: flex;
+  gap: 1.25rem;
 }
 
 nav a {
-  margin-right: 1.2rem;
+  position: relative;
   text-decoration: none;
   font-weight: 500;
   color: var(--text);
+  padding-bottom: 0.25rem;
 }
 
 nav a:hover {
-  color: var(--ict);
+  color: var(--accent);
 }
 
-/* PAGE */
+/* Active page highlight */
+nav a.active {
+  color: var(--accent);
+}
+
+nav a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+/* --------------------
+   MAIN CONTENT
+-------------------- */
+
 main {
   max-width: 1000px;
   margin: auto;
@@ -83,10 +120,22 @@ h1 {
 
 h2 {
   font-size: 1.3rem;
-  margin: 0.25rem 0;
+  margin: 0.5rem 0;
 }
 
-/* TIMELINE */
+h3 {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+}
+
+p {
+  color: var(--muted);
+}
+
+/* --------------------
+   TIMELINE
+-------------------- */
+
 .timeline {
   display: flex;
   flex-direction: column;
@@ -95,12 +144,13 @@ h2 {
 
 .timeline-item {
   position: relative;
-  padding: 1.5rem 2rem;
+  padding: 1.75rem 2rem;
   border: 1px solid var(--border);
-  border-radius: 10px;
-  background: #fff;
+  border-radius: 12px;
+  background: var(--surface);
 }
 
+/* Vertical indicator */
 .timeline-item::before {
   content: "";
   position: absolute;
@@ -112,45 +162,67 @@ h2 {
   background: var(--muted);
 }
 
-/* PERIOD */
+/* --------------------
+   TIMELINE CONTENT
+-------------------- */
+
 .timeline-period {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 600;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--muted);
 }
 
-/* META */
 .timeline-meta {
   font-weight: 600;
   color: var(--muted);
   margin-bottom: 0.5rem;
 }
 
-/* CONTENT */
 .timeline-item p {
-  margin: 0.5rem 0;
+  margin: 0.6rem 0;
 }
 
 .timeline-item ul {
-  margin-top: 0.5rem;
-  padding-left: 1.2rem;
+  margin-top: 0.75rem;
+  padding-left: 1.25rem;
 }
 
 .timeline-item li {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.35rem;
+  color: var(--muted);
 }
 
-/* DOMAIN COLORS */
+/* --------------------
+   DOMAIN COLORS
+-------------------- */
+
 .timeline-item[data-domain="ict"]::before {
   background: var(--ict);
 }
+
 .timeline-item[data-domain="security"]::before {
   background: var(--security);
 }
+
 .timeline-item[data-domain="ai"]::before {
   background: var(--ai);
 }
+
 .timeline-item[data-domain="robotics"]::before {
   background: var(--robotics);
+}
+
+/* --------------------
+   FOOTER
+-------------------- */
+
+.site-footer {
+  padding: 1.5rem;
+  background: #0f172a;
+  color: #9ca3af;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: auto;
 }
