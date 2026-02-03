@@ -2,7 +2,7 @@ role: L1 / Tier 1 Support Analyst
 organization: Ibex Global Solutions Inc.
 location: Karachi, Pakistan
 start: 2024
-end: 2024
+finish: 2024
 domain: security
 summary: Tier-1 IT and security support for Walmart.com in a 24/7 enterprise SOC environment.
 technologies:
@@ -18,7 +18,7 @@ role: Networking / Technical Associate
 organization: xFlow Research Pvt Ltd
 location: Islamabad, Pakistan
 start: 2024
-end: 2024
+finish: 2024
 domain: ict
 summary: Enterprise and research-focused networking, automation, and kernel-level experimentation.
 technologies:
@@ -35,7 +35,7 @@ role: Automotive ECU Cybersecurity Intern
 organization: Sumitomo Electric Industries (SEI)
 location: Yokkaichi, Japan
 start: 2023
-end: 2023
+finish: 2023
 domain: security
 summary: Automotive ECU security research under a global R&D internship program.
 technologies:
@@ -51,7 +51,7 @@ role: Cybersecurity Analyst
 organization: Lynx Info Sec
 location: Rawalpindi, Pakistan
 start: 2022
-end: 2023
+finish: 2023
 domain: security
 summary: Offensive and defensive security engagements for client environments.
 technologies:
@@ -68,7 +68,7 @@ role: Research Associate (Open RAN Security)
 organization: Bitsym Pvt Ltd
 location: Islamabad, Pakistan
 start: 2022
-end: 2022
+finish: 2022
 domain: communication
 summary: Research on ORAN security standards and Telco Cloud environments.
 technologies:
@@ -84,7 +84,7 @@ role: Software Engineer / Research Associate
 organization: Air University (SPRC)
 location: Islamabad, Pakistan
 start: 2019
-end: 2022
+finish: 2022
 domain: communication
 summary: Secure, low-latency distributed systems for avionics and real-time environments.
 technologies:
