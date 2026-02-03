@@ -5,7 +5,6 @@ baseurl: ""
 url: ""
 markdown: kramdown
 plugins: []
-theme: null
 
 # name: "Bilal Ismail"
 # title: "Bilal Ismail"
@@ -14,5 +13,6 @@ theme: null
 # include: ["_pages"]
 # exclude: ["_posts"]
 # baseurl: /
+
 
 
