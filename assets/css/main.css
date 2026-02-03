@@ -43,6 +43,15 @@ header {
   background: #fff;
 }
 
+.site-footer {
+  padding: 1.5rem;
+  background: #111;
+  color: #aaa;
+  text-align: center;
+}
+
+
+
 nav {
   max-width: 1000px;
   margin: auto;
