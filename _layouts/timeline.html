@@ -12,7 +12,7 @@
       {% assign items = site.data.hobbies %}
   {% endcase %}
 
-  {% assign items = items | sort: "start" | reverse %}
+  {% assign items = items | where_exp: "i", "i.start" | sort: "start" | reverse %}
 
   <div class="timeline">
     {% for item in items %}
