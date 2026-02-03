@@ -1,4 +1,4 @@
-<div class="timeline-item">
+<div class="timeline-item" data-domain="{{ include.item.domain | downcase }}">
   <span class="timeline-period">
     {{ include.item.start }}
     {% if include.item.finish and include.item.finish != include.item.start %}
@@ -16,9 +16,12 @@
     {% endif %}
   </h2>
 
-  {% if include.item.organization %}
-    <p><strong>{{ include.item.organization }}</strong></p>
+  {% if include.item.organization or include.item.institution %}
+    <div class="timeline-meta">
+      {{ include.item.organization }}{{ include.item.institution }}
+    </div>
   {% endif %}
+
 
   {% if include.item.institution %}
     <p><strong>{{ include.item.institution }}</strong></p>
