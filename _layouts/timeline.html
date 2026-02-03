@@ -20,6 +20,7 @@ layout: default
   {% if items %}
     {% assign items = items | sort: "start" | reverse %}
     <div class="timeline">
+      <section>
       {% for item in items %}
         {% include timeline-item.html item=item %}
       {% endfor %}
