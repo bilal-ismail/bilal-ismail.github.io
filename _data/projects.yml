@@ -1,17 +1,18 @@
-- name: Variable Power Supply 220v AC -> 12v DC
+- name: Variable Power Supply (220vac to 12vdc) 
   type: academic project
   domain: Basic Electronics
+  start: 2015
   finish: 2015
   problem: Hands on understanding of variable power supplies, regulators and transformers
   solution: use of capacitors for signal filtering and reverse protection through diodes
   outcome: self-designed and implemented on spotted vero board with soldering iron practice
 
-- name: P2
-  type: academic
-  domain: _
+- name: Plug and Play device analyzer toolkit
+  type: academic project
+  domain: Digital Forensics
   start: 2016
-  finish: _
-  problem: _
-  solution: _
-  outcome: _
+  finish: 2016
+  problem: Hardware analysis of custom fabricated boards or computing devices with challange of future smart city tech
+  solution: a plug and play toolkit proof of concept
+  outcome: Intuitive utility through automation, yet AI data set creation can enhance the use case even further
 
