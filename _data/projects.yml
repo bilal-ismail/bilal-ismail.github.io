@@ -1,18 +1,18 @@
-name: Device Analyser Toolkit
-type: academic
-domain: security
-start: 2024
-finish: 2024
-problem: Lack of portable hardware forensics tools for custom boards
-solution: Plug-and-play hardware forensics toolkit with middleware
-outcome: MS thesis dissertation completed
+- name: Device Analyser Toolkit
+  type: academic
+  domain: security
+  start: 2024
+  finish: 2024
+  problem: Lack of portable hardware forensics tools for custom boards
+  solution: Plug-and-play hardware forensics toolkit with middleware
+  outcome: MS thesis dissertation completed
 
 
-name: Anomaly-Based Intrusion Detection System
-type: academic
-domain: security
-start: 2018
-finish: 2018
-problem: Ineffective signature-only IDS approaches
-solution: Statistical and ML-based anomaly detection system
-outcome: BS thesis dissertation completed
+- name: Anomaly-Based Intrusion Detection System
+  type: academic
+  domain: security
+  start: 2018
+  finish: 2018
+  problem: Ineffective signature-only IDS approaches
+  solution: Statistical and ML-based anomaly detection system
+  outcome: BS thesis dissertation completed
