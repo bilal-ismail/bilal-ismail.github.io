@@ -8,8 +8,10 @@ layout: default
   {% case page.data_source %}
     {% when "work" %}{% assign items = site.data.work %}
     {% when "education" %}{% assign items = site.data.education %}
+    {% when "publications" %}{% assign items = site.data.publications %}
     {% when "projects" %}{% assign items = site.data.projects %}
     {% when "hobbies" %}{% assign items = site.data.hobbies %}
+
   {% endcase %}
 
   {% if items %}
