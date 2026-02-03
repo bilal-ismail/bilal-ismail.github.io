@@ -1,31 +1,50 @@
 <div class="timeline-item">
-<span class="timeline-period">{{ item.start }}{% if item.finish and item.finish != item.start %} – {{ item.finish }}{% endif %}</span>
+  <span class="timeline-period">
+    {{ include.item.start }}
+    {% if include.item.finish and include.item.finish != include.item.start %}
+      – {{ include.item.finish }}
+    {% endif %}
+  </span>
 
+  <h2>
+    {% if include.item.role %}
+      {{ include.item.role }}
+    {% elsif include.item.title %}
+      {{ include.item.title }}
+    {% elsif include.item.name %}
+      {{ include.item.name }}
+    {% endif %}
+  </h2>
 
-<h2>
-{% if item.role %}
-{{ item.role }}
-{% elsif item.title %}
-{{ item.title }}
-{% elsif item.name %}
-{{ item.name }}
-{% endif %}
-</h2>
+  {% if include.item.organization %}
+    <p><strong>{{ include.item.organization }}</strong></p>
+  {% endif %}
 
+  {% if include.item.institution %}
+    <p><strong>{{ include.item.institution }}</strong></p>
+  {% endif %}
 
-{% if item.organization %}<p><strong>{{ item.organization }}</strong></p>{% endif %}
-{% if item.institution %}<p><strong>{{ item.institution }}</strong></p>{% endif %}
+  {% if include.item.summary %}
+    <p>{{ include.item.summary }}</p>
+  {% endif %}
 
+  {% if include.item.problem %}
+    <p><strong>Problem:</strong> {{ include.item.problem }}</p>
+  {% endif %}
 
-{% if item.summary %}<p>{{ item.summary }}</p>{% endif %}
-{% if item.problem %}<p><strong>Problem:</strong> {{ item.problem }}</p>{% endif %}
-{% if item.solution %}<p><strong>Solution:</strong> {{ item.solution }}</p>{% endif %}
-{% if item.outcome %}<p><strong>Outcome:</strong> {{ item.outcome }}</p>{% endif %}
+  {% if include.item.solution %}
+    <p><strong>Solution:</strong> {{ include.item.solution }}</p>
+  {% endif %}
 
+  {% if include.item.outcome %}
+    <p><strong>Outcome:</strong> {{ include.item.outcome }}</p>
+  {% endif %}
 
-{% if item.highlights %}
-<ul>
-{% for h in item.highlights %}<li>{{ h }}</li>{% endfor %}
-</ul>
-{% endif %}
+  {% if include.item.highlights %}
+    <ul>
+      {% for h in include.item.highlights %}
+        <li>{{ h }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
 </div>
