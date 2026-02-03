@@ -4,6 +4,10 @@
     {% if include.item.finish and include.item.finish != include.item.start %}
       – {{ include.item.finish }}
     {% endif %}
+    {% if include.item.image %}
+      <img src="{{ include.item.image }}" alt="{{ include.item.name }}"
+           style="width:100%; margin:1rem 0; border-radius:8px;">
+    {% endif %}
   </span>
 
   <h2>
