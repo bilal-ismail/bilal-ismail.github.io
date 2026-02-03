@@ -1,3 +1,19 @@
+<div class="timeline-header">
+  <span class="timeline-period">
+    {{ item.start }}{% if item.finish %} – {{ item.finish }}{% endif %}
+  </span>
+
+  <h2>
+    {{ item.role | default: item.title | default: item.name }}
+  </h2>
+
+  {% if item.organization %}
+    <div class="timeline-meta">{{ item.organization }}</div>
+  {% endif %}
+</div>
+
+
+
 <div class="timeline-item" data-domain="{{ include.item.domain | downcase }}">
   <span class="timeline-period">
     {{ include.item.start }}
