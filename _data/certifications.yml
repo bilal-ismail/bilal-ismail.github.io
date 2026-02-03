@@ -1,0 +1,20 @@
+- title: IELTS
+  issuer: IDP | British Council
+  start: 2025
+  domain: English Proficiency
+  # image: /assets/images/ielts.png
+  summary: Advanced certification for C1 level english acclaimation - 7.5 Bands.
+
+- title: JLPT - N4
+  issuer: Japan Foundation
+  start: 2025
+  domain: Japanese Proficiency
+  # image: /assets/images/jlpt.png
+  summary: Advanced certificationfor A2 level language.
+
+- title: AWS - Cloud Practitioner
+  issuer: Amazon Web Services (AWS)
+  start: 2023
+  domain: Cloud Infrastructure
+  # image: /assets/images/cissp.png
+  summary: Advanced certification covering entry level cloud infrastructure, security, architecture and users management.
