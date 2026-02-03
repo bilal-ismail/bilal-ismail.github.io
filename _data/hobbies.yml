@@ -1,13 +1,13 @@
-name: Hardware Tools & Repairs
-domain: DIY Projects
-description: Collecting tools and performing hands-on technical repairs and builds
+- name: Hardware Tools & Repairs
+  domain: DIY Projects
+  description: Collecting tools and performing hands-on technical repairs and builds
 
 
-name: Running & Hiking
-domain: Physical Fitness
-description: Regular jogging, hiking, and endurance activities
+- name: Running & Hiking
+  domain: Physical Fitness
+  description: Regular jogging, hiking, and endurance activities
 
 
-name: Continuous Upskilling
-domain: AI, Automation, Inter-Operable Infrastructure
-description: Self-driven learning across the intersection of IT security, AI, Communication and Automation.
+- name: Continuous Upskilling
+  domain: AI, Automation, Inter-Operable Infrastructure
+  description: Self-driven learning across the intersection of IT security, AI, Communication and Automation.
