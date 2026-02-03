@@ -1,96 +1,96 @@
-role: L1 / Tier 1 Support Analyst
-organization: Ibex Global Solutions Inc.
-location: Karachi, Pakistan
-start: 2024
-finish: 2024
-domain: security
-summary: Tier-1 IT and security support for Walmart.com in a 24/7 enterprise SOC environment.
-technologies:
-- Incident Management
-- SLA Monitoring
-- Security Operations
-highlights:
-- Achieved maximum SLA compliance
-- Resolved and escalated complex incidents efficiently
+- role: L1 / Tier 1 Support Analyst
+  organization: Ibex Global Solutions Inc.
+  location: Karachi, Pakistan
+  start: 2024
+  finish: 2024
+  domain: security
+  summary: Tier-1 IT and security support for Walmart.com in a 24/7 enterprise SOC environment.
+  technologies:
+  - Incident Management
+  - SLA Monitoring
+  - Security Operations
+  highlights:
+  - Achieved maximum SLA compliance
+  - Resolved and escalated complex incidents efficiently
 
 
-role: Networking / Technical Associate
-organization: xFlow Research Pvt Ltd
-location: Islamabad, Pakistan
-start: 2024
-finish: 2024
-domain: ict
-summary: Enterprise and research-focused networking, automation, and kernel-level experimentation.
-technologies:
-- OSPF
-- BGP
-- Python
-- Linux
-highlights:
-- Automated monitoring with Python and Bash
-- Conducted Linux kernel networking research
+- role: Networking / Technical Associate
+  organization: xFlow Research Pvt Ltd
+  location: Islamabad, Pakistan
+  start: 2024
+  finish: 2024
+  domain: ict
+  summary: Enterprise and research-focused networking, automation, and kernel-level experimentation.
+  technologies:
+  - OSPF
+  - BGP
+  - Python
+  - Linux
+  highlights:
+  - Automated monitoring with Python and Bash
+  - Conducted Linux kernel networking research
 
 
-role: Automotive ECU Cybersecurity Intern
-organization: Sumitomo Electric Industries (SEI)
-location: Yokkaichi, Japan
-start: 2023
-finish: 2023
-domain: security
-summary: Automotive ECU security research under a global R&D internship program.
-technologies:
-- AUTOSAR
-- CAN Bus
-- Embedded Security
-highlights:
-- Developed secure CAN gateway modules
-- Performed firmware flashing and IDS simulations
+- role: Automotive ECU Cybersecurity Intern
+  organization: Sumitomo Electric Industries (SEI)
+  location: Yokkaichi, Japan
+  start: 2023
+  finish: 2023
+  domain: security
+  summary: Automotive ECU security research under a global R&D internship program.
+  technologies:
+  - AUTOSAR
+  - CAN Bus
+  - Embedded Security
+  highlights:
+  - Developed secure CAN gateway modules
+  - Performed firmware flashing and IDS simulations
 
 
-role: Cybersecurity Analyst
-organization: Lynx Info Sec
-location: Rawalpindi, Pakistan
-start: 2022
-finish: 2023
-domain: security
-summary: Offensive and defensive security engagements for client environments.
-technologies:
-- Nmap
-- Burp Suite
-- Metasploit
-- Docker
-highlights:
-- Conducted penetration testing and malware analysis
-- Deployed containerized SOC solutions
+- role: Cybersecurity Analyst
+  organization: Lynx Info Sec
+  location: Rawalpindi, Pakistan
+  start: 2022
+  finish: 2023
+  domain: security
+  summary: Offensive and defensive security engagements for client environments.
+  technologies:
+  - Nmap
+  - Burp Suite
+  - Metasploit
+  - Docker
+  highlights:
+  - Conducted penetration testing and malware analysis
+  - Deployed containerized SOC solutions
 
 
-role: Research Associate (Open RAN Security)
-organization: Bitsym Pvt Ltd
-location: Islamabad, Pakistan
-start: 2022
-finish: 2022
-domain: communication
-summary: Research on ORAN security standards and Telco Cloud environments.
-technologies:
-- ORAN
-- VMware Telco Cloud
-- Docker
-highlights:
-- Deployed xApps and rApps
-- Participated in security workgroups
+- role: Research Associate (Open RAN Security)
+  organization: Bitsym Pvt Ltd
+  location: Islamabad, Pakistan
+  start: 2022
+  finish: 2022
+  domain: communication
+  summary: Research on ORAN security standards and Telco Cloud environments.
+  technologies:
+  - ORAN
+  - VMware Telco Cloud
+  - Docker
+  highlights:
+  - Deployed xApps and rApps
+  - Participated in security workgroups
 
 
-role: Software Engineer / Research Associate
-organization: Air University (SPRC)
-location: Islamabad, Pakistan
-start: 2019
-finish: 2022
-domain: communication
-summary: Secure, low-latency distributed systems for avionics and real-time environments.
-technologies:
-- TCP/UDP
-- MIL-STD-1553
-- Distributed Systems
-highlights:
-- Designed secure avionics communication protocols
-- Built real-time distributed applications
+- role: Software Engineer / Research Associate
+  organization: Air University (SPRC)
+  location: Islamabad, Pakistan
+  start: 2019
+  finish: 2022
+  domain: communication
+  summary: Secure, low-latency distributed systems for avionics and real-time environments.
+  technologies:
+  - TCP/UDP
+  - MIL-STD-1553
+  - Distributed Systems
+  highlights:
+  - Designed secure avionics communication protocols
+  - Built real-time distributed applications
