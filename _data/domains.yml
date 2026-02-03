@@ -1,28 +1,28 @@
-ict:
-label: ICT & Networking
-order: 1
+- ict:
+  label: ICT & Networking
+  order: 1
 
 
-communication:
-label: Communication Systems
-order: 2
+- communication:
+  label: Communication Systems
+  order: 2
 
 
-security:
-label: Cybersecurity
-order: 3
+- security:
+  label: Cybersecurity
+  order: 3
 
 
-ai:
-label: Artificial Intelligence
-order: 4
+- ai:
+  label: Artificial Intelligence
+  order: 4
 
 
-robotics:
-label: Automation & Robotics
-order: 5
+- robotics:
+  label: Automation & Robotics
+  order: 5
 
 
-foundations:
-label: Computer Science Foundations
-order: 0
+- foundations:
+  label: Computer Science Foundations
+  order: 0
