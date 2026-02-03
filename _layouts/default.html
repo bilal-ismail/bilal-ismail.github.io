@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }}</title>
 
-  <!-- Link main CSS -->
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-
-  <!-- Optional: add favicon -->
-  <link rel="icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="{{ 'assets/css/style.css' | relative_url }}">
+  
+  <!-- Optional: Favicon -->
+  <link rel="icon" href="{{ 'assets/images/favicon.ico' | relative_url }}">
 </head>
 <body>
   <!-- Header / Navigation -->
-  <header style="background-color:#222; color:#fff; padding:1rem;">
-    <div class="container" style="max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center;">
-      <h1><a href="{{ '/' | relative_url }}" style="color:#fff; text-decoration:none;">My Site</a></h1>
+  <header style="background:#222; color:#fff; padding:1rem;">
+    <div style="max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center;">
+      <h1><a href="{{ '/' | relative_url }}" style="color:#fff; text-decoration:none;">Bilal Ismail</a></h1>
       <nav>
         <a href="{{ '/' | relative_url }}" style="color:#fff; margin-right:1rem;">Home</a>
         <a href="{{ '/about/' | relative_url }}" style="color:#fff; margin-right:1rem;">About</a>
@@ -24,14 +24,17 @@
     </div>
   </header>
 
-  <!-- Main content -->
+  <!-- Main Content -->
   <main style="padding:2rem; max-width:1200px; margin:0 auto;">
     {{ content }}
   </main>
 
   <!-- Footer -->
-  <footer style="background-color:#222; color:#fff; padding:1rem; text-align:center;">
-    &copy; {{ site.time | date: "%Y" }} My Site. All rights reserved.
+  <footer style="background:#222; color:#fff; padding:1rem; text-align:center;">
+    &copy; {{ site.time | date: "%Y" }} Bilal Ismail. All rights reserved.
   </footer>
+
+  <!-- Optional JS -->
+  <script src="{{ 'assets/js/main.js' | relative_url }}"></script>
 </body>
 </html>
