@@ -18,7 +18,7 @@
 
 - name: Plug and Play device analyzer toolkit
   type: academic project
-  domain: Digital Forensics
+  domain: Digital Forensics | Operating Systems | Kernel Enhancement | Serial Communication | Raspberry Pi | Pi Zero | Automation
   start: 2023
   finish: 2024
   problem: Hardware analysis of custom fabricated boards or computing devices with challange of future smart city tech
