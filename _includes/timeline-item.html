@@ -79,6 +79,10 @@
     <p>{{ include.item.description }}</p>
   {% endif %}
 
+  {% if include.item.focus %}
+    <p>{{ include.item.focus }}</p>
+  {% endif %}
+  
   {% if include.item.technologies %}
     <p><strong>Technologies:</strong>{{ include.item.technologies }}</p>
   {% endif %}
