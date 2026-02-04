@@ -10,14 +10,14 @@
 - title: IELTS
   issuer: IDP IELTS | British Council
   start: 2025
-  domain: English | Language Proficiency
+  domain: Language Proficiency | English
   # image: /assets/images/ielts.png
   summary: Advanced certification for C1 level english acclaimation - 7.5 Bands.
 
 - title: JLPT - N4
   issuer: Japan Foundation
   start: 2025
-  domain: Japanese | Language Proficiency
+  domain: Language Proficiency | Japanese
   # image: /assets/images/jlpt.png
   summary: Advanced certificationfor A2 level language.
 
