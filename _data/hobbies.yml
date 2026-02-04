@@ -1,13 +1,18 @@
-- name: Hardware Tools & Repairs
-  domain: DIY Projects
+- name: Hardware Tools Collection
+  domain: Handheld-tools | Power-tools
+  description: Collecting various types of tools since childhood
+
+
+- name: Domestic Repairs
+  domain: DIY | Maintenance Projects | Household Chores | Automotive Repairs
   description: Collecting tools and performing hands-on technical repairs and builds
 
 
-- name: Running & Hiking
+- name: Running, Hiking and rarely Swimming
   domain: Physical Fitness
   description: Regular jogging, hiking, and endurance activities
 
 
 - name: Continuous Upskilling
-  domain: AI, Automation, Inter-Operable Infrastructure
+  domain: Inter-Operable Infrastructure | Automation | AI
   description: Self-driven learning across the intersection of IT security, AI, Communication and Automation.
