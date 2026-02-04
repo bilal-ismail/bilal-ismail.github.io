@@ -1,6 +1,6 @@
-- name: Hardware Tools Collection
-  domain: Handheld-tools | Power-tools
-  description: Collecting various types of tools since childhood
+- name: Running, Hiking and rarely Swimming
+  domain: Physical Fitness
+  description: Regular jogging, hiking, and endurance activities
 
 
 - name: Domestic Repairs
@@ -8,11 +8,13 @@
   description: Collecting tools and performing hands-on technical repairs and builds
 
 
-- name: Running, Hiking and rarely Swimming
-  domain: Physical Fitness
-  description: Regular jogging, hiking, and endurance activities
-
-
 - name: Continuous Upskilling
   domain: Inter-Operable Infrastructure | Automation | AI
   description: Self-driven learning across the intersection of IT security, AI, Communication and Automation.
+
+
+- name: Hardware Tools Collection
+  domain: Handheld-tools | Power-tools
+  description: Collecting various types of tools since childhood
+
+
