@@ -31,9 +31,9 @@
 <div class="timeline-item" data-domain="{{ include.item.domain | downcase }}">
 
 
-  <span>
+  <span class="flex">
     {% if include.item.issuer %}
-      <p><strong>Issuer:</strong>{{ include.item.issuer }}</p>
+      <p><strong>Issuer: </strong>{{ include.item.issuer }}</p>
     {% endif %}
     
     {% if include.item.institution %}
