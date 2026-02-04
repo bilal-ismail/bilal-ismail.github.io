@@ -3,7 +3,7 @@
   location: Islamabad, Pakistan
   start: 2020
   finish: 2024
-  domain: security
+  domain: Cybersecurity | Information Security | Digital Forensics | Netowrk Security | 
   focus:
   - SOC Operations
   - Secure Software Development
@@ -12,7 +12,7 @@
   - Computer Forensics
   - Cryptography
   - Malware reversing
-  - Pen-Testing,  Exploitation and Defense
+  - Pen-Testing / Exploitation and Defense
 
 
 - title: Bachelor of Science in Computer Science
@@ -20,8 +20,17 @@
   location: Islamabad, Pakistan
   start: 2015
   finish: 2019
-  domain: foundations
+  domain: Computer Science | Databases | Programming | Management
   focus:
+  - Mathematics
+  - Linear Algebra
+  - Calculus & Geometry
+  - Multivariable Calculus
+  - Probability and Statistics
+  - Numerical Analysis
+  - Programming
+  - Differential Equations
+  - Application Design Principles
   - Computer Networks
   - Operating Systems
   - Data Structures
