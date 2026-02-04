@@ -43,6 +43,14 @@
   {% endif %} -->
 
 
+  {% if include.item.domain %}
+    <p><strong>Domain:</strong> {{ include.item.domain }}</p>
+  {% endif %}
+
+  {% if include.item.type %}
+    <p><strong>Type:</strong> {{ include.item.type }}</p>
+  {% endif %}
+  
   {% if include.item.institution %}
     <p><strong>{{ include.item.institution }}</strong></p>
   {% endif %}
@@ -61,6 +69,10 @@
 
   {% if include.item.outcome %}
     <p><strong>Outcome:</strong> {{ include.item.outcome }}</p>
+  {% endif %}
+
+  {% if include.item.description %}
+    <p>{{ include.item.description }}</p>
   {% endif %}
 
   {% if include.item.highlights %}
