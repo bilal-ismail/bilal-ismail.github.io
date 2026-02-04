@@ -37,10 +37,6 @@
 
 
   <span class="flex-col">
-    {% if include.item.issuer %}
-      <p><strong>Issuer: </strong>{{ include.item.issuer }}</p>
-    {% endif %}
-    
     {% if include.item.institution %}
       <p><strong>{{ include.item.institution }}</strong></p>
     {% endif %}
@@ -102,6 +98,10 @@
       {% endfor %}
     </ul>
   {% endif %}
+
+  {% if include.item.issuer %}
+      <p><strong>Issuer: </strong>{{ include.item.issuer }}</p>
+    {% endif %}
 </div>
 <div>
   <br>
