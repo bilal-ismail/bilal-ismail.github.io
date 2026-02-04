@@ -68,10 +68,6 @@
   {% if include.item.description %}
     <p>{{ include.item.description }}</p>
   {% endif %}
-
-  {% if include.item.focus %}
-    <p>{{ include.item.focus }}</p>
-  {% endif %}
   
   {% if include.item.technologies %}
     <strong>Technologies:</strong>
@@ -81,6 +77,18 @@
     <ul>
       {% for t in include.item.technologies %}
         <li>{{ t }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  
+  {% if include.item.focus %}
+    <p>{{ include.item.focus }}</p>
+  {% endif %}
+
+    {% if include.item.focus %}
+    <ul>
+      {% for f in include.item.focus %}
+        <li>{{ f }}</li>
       {% endfor %}
     </ul>
   {% endif %}
