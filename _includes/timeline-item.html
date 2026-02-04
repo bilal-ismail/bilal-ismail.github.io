@@ -20,6 +20,10 @@
     {% if include.item.finish and include.item.finish != include.item.start %}
       – {{ include.item.finish }}
     {% endif %}
+      {% if include.item.location %}
+        <p>{{ include.item.location }}</p>
+      {% endif %}
+  
     {% if include.item.image %}
       <img src="{{ include.item.image }}" alt="{{ include.item.name }}"
            style="width:100%; margin:1rem 0; border-radius:8px;">
@@ -42,6 +46,10 @@
     </div>
   {% endif %} -->
 
+  
+  {% if include.item.institution %}
+    <p><strong>{{ include.item.institution }}</strong></p>
+  {% endif %}
 
   {% if include.item.domain %}
     <p><strong>Domain:</strong> {{ include.item.domain }}</p>
@@ -50,15 +58,7 @@
   {% if include.item.type %}
     <p><strong>Type:</strong> {{ include.item.type }}</p>
   {% endif %}
-  
-  {% if include.item.institution %}
-    <p><strong>{{ include.item.institution }}</strong></p>
-  {% endif %}
 
-  {% if include.item.location %}
-    <p>{{ include.item.location }}</p>
-  {% endif %}
-  
   {% if include.item.summary %}
     <p>{{ include.item.summary }}</p>
   {% endif %}
