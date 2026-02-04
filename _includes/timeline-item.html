@@ -55,6 +55,10 @@
     <p><strong>{{ include.item.institution }}</strong></p>
   {% endif %}
 
+  {% if include.item.location %}
+    <p>{{ include.item.location }}</p>
+  {% endif %}
+  
   {% if include.item.summary %}
     <p>{{ include.item.summary }}</p>
   {% endif %}
@@ -73,6 +77,14 @@
 
   {% if include.item.description %}
     <p>{{ include.item.description }}</p>
+  {% endif %}
+
+  {% if include.item.technologies %}
+    <p><strong>Technologies:</strong>{{ include.item.technologies }}</p>
+  {% endif %}
+  
+  {% if include.item.highlights %}
+    <p><strong>Highlights:</strong>{{ include.item.highlights }}</p>
   {% endif %}
 
   {% if include.item.highlights %}
