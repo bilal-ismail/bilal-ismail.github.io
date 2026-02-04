@@ -17,7 +17,23 @@ title: Hobbies & Interests
   description: Self-driven learning across the intersection of IT security, AI, Communication and Automation.
 </p>
 
-  <p><br>{{ site.data.hobbies[0] }}</p>
 </div>
 
+<section>
+
+  {% assign items = site.data.hobbies %}
+    
+  {% endcase %}
+
+  {% if items %}
+    {% assign items = items | sort: "start" | reverse %}
+    <div class="contact">
+      <section>
+      {% for item in items %}
+        {% include.item.name %}        
+        {% include.item.description %}        
+      {% endfor %}
+    </div>
+  {% endif %}
+</section>
 
