@@ -2,7 +2,7 @@
 layout: page
 title: Contact
 ---
-
+<h2>Contact Information</h2>
 <div class="contact-card">
   <p><strong>Email</strong><br>{{ site.email }}</p>
   <p><strong>LinkedIn</strong><br>
