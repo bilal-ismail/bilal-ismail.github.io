@@ -4,5 +4,5 @@ title: Hobbies & Interests
 ---
 
 <div class="contact-card">
-  <p><strong>Email</strong><br>{{ site.hobbies }}</p>
+  <p><br>{{ site.hobbies }}</p>
 </div>
