@@ -6,12 +6,12 @@
   domain: support, troubleshooting, compliance
   summary: Tier-1 IT and security support for Walmart.com in a 24/7 enterprise SOC environment.
   technologies:
-  ! Incident Management
-  ! SLA Monitoring
-  ! Security Operations
+  - Incident Management
+  - SLA Monitoring
+  - Security Operations
   highlights:
-  ! Achieved maximum SLA compliance
-  ! Resolved and escalated complex incidents efficiently
+  - Achieved maximum SLA compliance
+  - Resolved and escalated complex incidents efficiently
 
 
 - role: Networking / Technical Associate
