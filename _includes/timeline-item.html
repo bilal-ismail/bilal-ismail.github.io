@@ -1,8 +1,5 @@
 <div class="timeline-header">
-  <!-- <span class="timeline-period">
-    {{ item.start }}{% if item.finish %} – {{ item.finish }}{% endif %}
-  </span> -->
-  
+
   <h2>
     {{ item.role | default: item.title | default: item.name }}
   </h2>
@@ -32,23 +29,6 @@
 
 
 <div class="timeline-item" data-domain="{{ include.item.domain | downcase }}">
-
-
-  <!-- <h2>
-    {% if include.item.role %}
-      {{ include.item.role }}
-    {% elsif include.item.title %}
-      {{ include.item.title }}
-    {% elsif include.item.name %}
-      {{ include.item.name }}
-    {% endif %}
-  </h2> -->
-
-  <!-- {% if include.item.organization or include.item.institution %}
-    <div class="timeline-meta">
-      {{ include.item.organization }}{{ include.item.institution }}
-    </div>
-  {% endif %} -->
 
   
   {% if include.item.institution %}
@@ -88,13 +68,20 @@
   {% endif %}
   
   {% if include.item.technologies %}
-    <p><strong>Technologies:</strong>{{ include.item.technologies }}</p>
+    <strong>Technologies:</strong>
   {% endif %}
   
+  {% if include.item.technologies %}
+    <ul>
+      {% for t in include.item.technologies %}
+        <li>{{ t }}</li>
+      {% endfor %}
+    </ul>
+  
   {% if include.item.highlights %}
-    <p><strong>Highlights:</strong>{{ include.item.highlights }}</p>
+    <strong>Highlights:</strong>
   {% endif %}
-
+  
   {% if include.item.highlights %}
     <ul>
       {% for h in include.item.highlights %}
