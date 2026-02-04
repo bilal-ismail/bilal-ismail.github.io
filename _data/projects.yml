@@ -16,6 +16,15 @@
   solution: an economical yet intuitive approach to implement reverse logic through 12 voly relays
   outcome:  Hence, enhancing longevity of the relatively expensive relay
 
+- name: Off-Road Buggy Project - Wild Wheelers
+  type: academic competition project
+  domain: Automotive | Off-Road | Safety | Electronics | Mechanical | Fabrication | Customization
+  start: 2023
+  finish: 2024
+  problem: Inter-University competition for in-house off-road buggy manufacturing
+  solution: with an off the shelf engine as per regulations and old scrap parts, an amazing machine was made. Capable of manuvering and powerful enough to fulfil the technical challenges
+  outcome: The project won the 2nd runner up prize, as I was an active member of the team
+
 - name: Plug and Play device analyzer toolkit
   type: academic project
   domain: Digital Forensics | Operating Systems | Kernel Enhancement | Serial Communication | Raspberry Pi | Pi Zero | Automation
