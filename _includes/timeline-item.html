@@ -42,7 +42,7 @@
   </span>
   
   {% if include.item.domain %}
-    <p><strong>Domain:</strong> {{ include.item.domain }}</p>
+    <p><strong>{{ include.item.domain }}</strong></p>
   {% endif %}
 
   {% if include.item.type %}
@@ -80,12 +80,9 @@
       {% endfor %}
     </ul>
   {% endif %}
+
   
   {% if include.item.focus %}
-    <p>{{ include.item.focus }}</p>
-  {% endif %}
-
-    {% if include.item.focus %}
     <ul>
       {% for f in include.item.focus %}
         <li>{{ f }}</li>
