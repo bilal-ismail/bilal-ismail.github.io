@@ -30,11 +30,17 @@
 
 <div class="timeline-item" data-domain="{{ include.item.domain | downcase }}">
 
-  
-  {% if include.item.institution %}
-    <p><strong>{{ include.item.institution }}</strong></p>
-  {% endif %}
 
+  <span>
+    {% if include.item.issuer %}
+      <p><strong>Issuer:</strong>{{ include.item.issuer }}</p>
+    {% endif %}
+    
+    {% if include.item.institution %}
+      <p><strong>{{ include.item.institution }}</strong></p>
+    {% endif %}
+  </span>
+  
   {% if include.item.domain %}
     <p><strong>Domain:</strong> {{ include.item.domain }}</p>
   {% endif %}
