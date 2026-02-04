@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contact
+title: Contact Information
 ---
 <h1>Contact Information</h1>
 <div class="contact-card">
