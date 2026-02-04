@@ -19,8 +19,8 @@
   location: Islamabad, Pakistan
   start: 2024
   finish: 2024
-  domain: ict
-  summary: Enterprise and research-focused networking, automation, and kernel-level experimentation.
+  domain: network-OS, research, deployments, networking
+  summary: Enterprise datacenter and research-focused networking, automation, and kernel-level experimentation for SONiC NOS.
   technologies:
   - OSPF
   - BGP
@@ -36,7 +36,7 @@
   location: Yokkaichi, Japan
   start: 2023
   finish: 2023
-  domain: security
+  domain: automotive, CAN, communivation simulation, security, embedded firmware
   summary: Automotive ECU security research under a global R&D internship program.
   technologies:
   - AUTOSAR
@@ -69,7 +69,7 @@
   location: Islamabad, Pakistan
   start: 2022
   finish: 2022
-  domain: communication
+  domain: wireless communication, devops, cloud infrastructure
   summary: Research on ORAN security standards and Telco Cloud environments.
   technologies:
   - ORAN
@@ -81,7 +81,7 @@
 
 
 - role: Software Engineer / Research Associate
-  organization: Air University (SPRC)
+  organization: Signal Processing and Research Center (SPRC), Air University
   location: Islamabad, Pakistan
   start: 2019
   finish: 2022
