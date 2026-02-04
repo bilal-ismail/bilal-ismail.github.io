@@ -24,6 +24,11 @@
     {% endif %}
   </span>
   
+  {% if include.item.domain %}
+    <p><strong>{{ include.item.domain }}</strong></p>
+    <!-- <p><light>{{ include.item.domain }}</light></p> -->
+  {% endif %}
+  
 </div>
 
 
@@ -31,7 +36,7 @@
 <div class="timeline-item" data-domain="{{ include.item.domain | downcase }}">
 
 
-  <span class="flex">
+  <span class="flex-col">
     {% if include.item.issuer %}
       <p><strong>Issuer: </strong>{{ include.item.issuer }}</p>
     {% endif %}
@@ -40,11 +45,6 @@
       <p><strong>{{ include.item.institution }}</strong></p>
     {% endif %}
   </span>
-  
-  {% if include.item.domain %}
-    <!-- <p><strong>{{ include.item.domain }}</strong></p> -->
-    <p><light>{{ include.item.domain }}</light></p>
-  {% endif %}
 
   {% if include.item.type %}
     <p><strong>Type:</strong> {{ include.item.type }}</p>
