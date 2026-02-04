@@ -3,7 +3,7 @@
   location: Karachi, Pakistan
   start: 2024
   finish: 2024
-  domain: support, troubleshooting, compliance
+  domain: Support | Troubleshooting | compliance
   summary: Tier-1 IT and compliance support for Walmart.com in a 24/7 enterprise environment.
   technologies:
   - Incident Management
@@ -19,7 +19,7 @@
   location: Islamabad, Pakistan
   start: 2024
   finish: 2024
-  domain: network-OS, research, deployments, networking
+  domain: Network-OS | Research | Deployments | Networking
   summary: Enterprise datacenter and research-focused networking, automation, and kernel-level experimentation for SONiC NOS.
   technologies:
   - OSPF
@@ -36,7 +36,7 @@
   location: Yokkaichi, Japan
   start: 2023
   finish: 2023
-  domain: automotive, CAN, communivation simulation, security, embedded firmware
+  domain: Automotive, CAN, Communivation Simulation, Security, Embedded Firmware
   summary: Automotive ECU security research under a global R&D internship program.
   technologies:
   - AUTOSAR
@@ -52,7 +52,7 @@
   location: Rawalpindi, Pakistan
   start: 2022
   finish: 2023
-  domain: security
+  domain: Pen-Testing | Reverse Engineering | Malware Analysis | Cloud
   summary: Offensive and defensive security engagements for client environments.
   technologies:
   - Nmap
@@ -69,7 +69,7 @@
   location: Islamabad, Pakistan
   start: 2022
   finish: 2022
-  domain: wireless communication, devops, cloud infrastructure
+  domain: Wireless Communication  Devops | Cloud Infrastructure
   summary: Research on ORAN security standards and Telco Cloud environments.
   technologies:
   - ORAN
@@ -85,7 +85,7 @@
   location: Islamabad, Pakistan
   start: 2019
   finish: 2022
-  domain: communication
+  domain: RTOS | Concurrent Applications | Operating Systems | Avionics | Information Management
   summary: Secure, low-latency distributed systems for avionics and real-time environments.
   technologies:
   - TCP/UDP
