@@ -1,6 +1,7 @@
 - title: n/a
   # jurisdiction: region (e.g USPTO)
   # status: Preparing (e.g Pending)
-  # start: 2027
-  # domain: robotics
+  start: 2025
+  finish: presently working on the proof of concept (PoC)
+  domain: Bio-medical | Automation | Hardware Device
   summary:  Currently working on developing economical, domestic products
