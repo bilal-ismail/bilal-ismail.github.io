@@ -5,16 +5,16 @@ title: Hobbies & Interests
 
 <div class="contact-card">
   
-<p> <strong>Hardware Tools & Repairs</strong>
-  description: Collecting tools and performing hands-on technical repairs and builds
+<p> <strong>Hardware Tools & Repairs, </strong>
+  Collecting tools and performing hands-on technical repairs and builds
 </p>
 
-<p> <strong>Running & Hiking</strong>
-    description: Regular jogging, hiking, and endurance activities
+<p> <strong>Running & Hiking, </strong>
+  Regular jogging, hiking, and endurance activities
 </p>
 
-<p><strong>Continuous Upskilling</strong>
-  description: Self-driven learning across the intersection of IT security, AI, Communication and Automation.
+<p><strong>Continuous Upskilling, </strong>
+  Self-driven learning across the intersection of IT security, AI, Communication and Automation.
 </p>
 
 </div>
@@ -27,11 +27,11 @@ title: Hobbies & Interests
 
   {% if items %}
     {% assign items = items | sort: "start" | reverse %}
-    <div class="contact">
+    <div class="contact-card">
       <section>
       {% for item in items %}
-        {% include.item.name %}        
-        {% include.item.description %}        
+        {% item.name %}        
+        {% item.description %}        
       {% endfor %}
     </div>
   {% endif %}
