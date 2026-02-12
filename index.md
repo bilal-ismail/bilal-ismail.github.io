@@ -8,11 +8,16 @@ title: Home
 
   <div class="banner-collage">
     {% assign banner_images = site.static_files | where_exp: "file", "file.path contains '/assets/images/banner/'" %}
-    {% for image in banner_images %}
+      {% for image in banner_images %}
+        <div class="banner-item {% if image.path contains 'banner-4' or image.path contains 'banner-6' %}wide{% endif %}">
+          <img src="{{ image.path | relative_url }}" alt="">
+        </div>
+  {% endfor %}
+<!-- {% for image in banner_images %}
       <div class="banner-item">
         <img src="{{ image.path | relative_url }}" alt="">
       </div>
-    {% endfor %}
+    {% endfor %} -->
   </div>
 
   <div class="hero-content">
