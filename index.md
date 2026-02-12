@@ -31,7 +31,7 @@ title: Home
 </section>
 
 <section class="wall">
-  <h2>Wall of Impact</h2>
+  <h2>My Impact</h2>
 
   <div class="wall-grid">
     <!-- image cards later -->
@@ -39,6 +39,19 @@ title: Home
     <div class="wall-card">SOC & Security Ops</div>
     <div class="wall-card">AI & Automation</div>
     <div class="wall-card">Robotics Systems</div>
+  </div>
+</section>
+
+<section class="highlights">
+  <h2>Highlights</h2>
+
+  <div class="highlights-grid">
+    {% assign highlight_images = site.static_files | where_exp: "file", "file.path contains '/assets/images/highlights/'" %}
+    {% for image in highlight_images %}
+      <div class="highlight-card">
+        <img src="{{ image.path | relative_url }}" alt="">
+      </div>
+    {% endfor %}
   </div>
 </section>
 
