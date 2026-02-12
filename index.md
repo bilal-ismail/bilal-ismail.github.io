@@ -7,8 +7,6 @@ title: Home
                         HERO
 ======================================================= -->
 
-{% include header.html %}
-
 <section class="hero-banner" id="heroBanner">
   <div class="hero-grid">
 
@@ -35,12 +33,14 @@ title: Home
   </div>
 </section>
 
+{% include header.html %}
+
 
 <script>
   const heroImages = [
-    "/assets/images/banner/banner-1.jpg",
-    "/assets/images/banner/banner-2.jpg",
     "/assets/images/banner/banner-3.jpg",
+    "/assets/images/banner/banner-2.jpg",
+    "/assets/images/banner/banner-1.jpg",
     "/assets/images/banner/banner-4.jpg",
     "/assets/images/banner/banner-5.jpg",
     "/assets/images/banner/banner-6.jpg",
