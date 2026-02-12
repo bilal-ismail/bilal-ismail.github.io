@@ -319,14 +319,22 @@ p {
   position: absolute;
   inset: 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-auto-rows: 180px;
   gap: 8px;
   z-index: 1;
 }
 
 .banner-item {
   overflow: hidden;
+}
+
+.banner-item:nth-child(3n) {
+  grid-row: span 2;
+}
+
+.banner-item:nth-child(4n) {
+  grid-column: span 2;
 }
 
 .banner-item img {
