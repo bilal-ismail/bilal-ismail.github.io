@@ -7,7 +7,7 @@ title: Home
         HERO SECTION
 ========================= -->
 
-<section class="hero-banner">
+<section class="hero-banner" id="heroBanner">
   <div class="hero-content">
     <div class="hero-subtitle">
       ICT • Security • AI • Automation • Robotics
@@ -20,12 +20,33 @@ title: Home
 
     <p class="hero-description">
       My work spans enterprise networking, defensive security, and applied artificial intelligence,
-      with a growing focus on automation and robotics. Over time, my trajectory has moved from
-      communication infrastructure to intelligent systems — emphasizing reliability,
-      safety, and real-world deployment.
+      with a growing focus on automation and robotics.
     </p>
   </div>
 </section>
+
+<script>
+  const images = [
+    "/assets/images/banner/banner-1.jpg",
+    "/assets/images/banner/banner-2.jpg",
+    "/assets/images/banner/banner-3.jpg",
+    "/assets/images/banner/banner-4.jpg",
+    "/assets/images/banner/banner-5.jpg",
+    "/assets/images/banner/banner-6.jpg",
+    "/assets/images/banner/banner-7.jpg"
+  ];
+
+  let current = 0;
+  const hero = document.getElementById("heroBanner");
+
+  function changeBackground() {
+    hero.style.backgroundImage = `url(${images[current]})`;
+    current = (current + 1) % images.length;
+  }
+
+  changeBackground();
+  setInterval(changeBackground, 5000);
+</script>
 
 <!-- =========================
         WALL OF IMPACT
