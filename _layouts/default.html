@@ -7,13 +7,37 @@
 </head>
 <body>
 
-  {% include header.html %}
+  <!-- {% include header.html %}
 
   <main class="site-main">
     {{ content }}
   </main>
 
-  {% include footer.html %}
+  {% include footer.html %} -->
 
+  {% unless page.url == "/" %}
+  <header class="site-header">
+    {% include nav.html %}
+  </header>
+  {% endunless %}
+  
+  <main class="site-main">
+    {{ content }}
+  </main>
+  
+  {% if page.url == "/" %}
+  <header class="site-header home-nav">
+    {% include nav.html %}
+  </header>
+  {% endif %}
+  
+  <footer class="site-footer">
+    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
+  </footer>
+
+
+  
 </body>
 </html>
+
+
