@@ -3,17 +3,31 @@ layout: page
 title: Home
 ---
 
-<section class="hero">
-  <h1>ICT Engineer</h1>
-  <p class="hero-subtitle">
-    Networking · Cybersecurity · AI · Automation · Robotics
-  </p>
+<section class="hero-banner">
+  <div class="banner-overlay"></div>
+
+  <div class="banner-collage">
+    {% assign banner_images = site.static_files | where_exp: "file", "file.path contains '/assets/images/banner/'" %}
+    {% for image in banner_images %}
+      <div class="banner-item">
+        <img src="{{ image.path | relative_url }}" alt="">
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="hero-content">
+    <h1>ICT Engineer</h1>
+    <p class="hero-subtitle">
+      Networking · Cybersecurity · AI · Automation · Robotics
+    </p>  
 
   <p class="hero-description">
     I work across communication infrastructure, secure systems, and applied
     artificial intelligence — with a focus on real-world deployment,
     reliability, and safety-critical environments.
   </p>
+  
+  </div>
 </section>
 
 <section class="wall">
