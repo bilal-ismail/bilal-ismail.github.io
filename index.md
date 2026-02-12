@@ -42,6 +42,20 @@ title: Home
   </div>
 </section>
 
+<section class="credentials">
+  <h2>Credentials & Certifications</h2>
+
+  <div class="credentials-grid">
+    {% assign cert_images = site.static_files | where_exp: "file", "file.path contains '/assets/images/certificates/'" %}
+    {% for image in cert_images %}
+      <div class="credential-card">
+        <img src="{{ image.path | relative_url }}" alt="">
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+
 <section class="cta">
   <h2>Explore</h2>
   <p>
