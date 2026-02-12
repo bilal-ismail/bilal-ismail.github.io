@@ -7,6 +7,8 @@ title: Home
                         HERO
 ======================================================= -->
 
+{% include header.html %}
+
 <section class="hero-banner" id="heroBanner">
   <div class="hero-grid">
 
@@ -32,8 +34,6 @@ title: Home
 
   </div>
 </section>
-
-  {% include header.html %}
 
 
 <script>
