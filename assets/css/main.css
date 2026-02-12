@@ -60,7 +60,7 @@ a:hover {
 }
 
 /* =========================================================
-   HEADER & NAVIGATION
+   HEADER
 ========================================================= */
 
 header {
@@ -87,7 +87,6 @@ nav a:hover {
   color: var(--accent);
 }
 
-/* Active page */
 nav a.active {
   color: var(--accent);
 }
@@ -113,45 +112,109 @@ main {
   padding: 3rem 2rem;
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-}
-
-h2 {
-  font-size: 1.4rem;
-  margin: 0.5rem 0;
-}
-
-h3 {
-  font-size: 1.1rem;
-  margin-top: 1.5rem;
-}
-
-p {
-  color: var(--muted);
-}
-
 /* =========================================================
-   HOME PAGE
+   HERO BANNER
 ========================================================= */
 
-.hero {
-  margin-bottom: 4rem;
+.hero-banner {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  height: 65vh;
+  min-height: 480px;
+  overflow: hidden;
+}
+
+/* Grid layout */
+.banner-collage {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 8px;
+  z-index: 1;
+}
+
+/* Make banner-4 and banner-6 wider */
+.banner-item img[src*="banner-4"],
+.banner-item img[src*="banner-6"] {
+  grid-column: span 2;
+}
+
+/* Image behavior */
+.banner-item {
+  overflow: hidden;
+}
+
+.banner-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.8);
+  transition: transform 0.6s ease;
+}
+
+.banner-item img:hover {
+  transform: scale(1.04);
+}
+
+/* Overlay */
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.35),
+    rgba(0,0,0,0.55)
+  );
+  z-index: 2;
+}
+
+/* Hero content */
+.hero-content {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+  color: #f8fafc;
+}
+
+.hero-content h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
 }
 
 .hero-subtitle {
+  font-size: 0.95rem;
   font-weight: 600;
-  color: var(--accent);
-  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #93c5fd;
+  margin-bottom: 1.2rem;
 }
 
 .hero-description {
-  max-width: 720px;
+  max-width: 650px;
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.7;
 }
 
+/* =========================================================
+   WALL SECTION
+========================================================= */
+
 .wall {
-  margin: 4rem 0;
+  margin: 5rem 0;
 }
 
 .wall-grid {
@@ -165,9 +228,15 @@ p {
   padding: 2rem;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 14px;
   font-weight: 600;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wall-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
 }
 
 /* =========================================================
@@ -184,11 +253,10 @@ p {
   position: relative;
   padding: 1.75rem 2rem;
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 14px;
   background: var(--surface);
 }
 
-/* Vertical indicator */
 .timeline-item::before {
   content: "";
   position: absolute;
@@ -200,15 +268,9 @@ p {
   background: var(--muted);
 }
 
-/* Header */
-.timeline-header {
-  margin-bottom: 1rem;
-}
-
 .timeline-period {
   font-size: 0.8rem;
   font-weight: 600;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--muted);
 }
@@ -219,9 +281,9 @@ p {
   color: var(--muted);
 }
 
-/* Content */
 .timeline-item p {
   margin: 0.6rem 0;
+  color: var(--muted);
 }
 
 .timeline-item ul {
@@ -234,45 +296,19 @@ p {
   color: var(--muted);
 }
 
-/* Optional image */
 .timeline-image {
   width: 100%;
-  max-height: 220px;
-  object-fit: cover;
+  max-height: 260px;
+  object-fit: contain;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
 
-/* =========================================================
-   DOMAIN COLORS
-========================================================= */
-
-.timeline-item[data-domain="ict"]::before {
-  background: var(--ict);
-}
-
-.timeline-item[data-domain="security"]::before {
-  background: var(--security);
-}
-
-.timeline-item[data-domain="ai"]::before {
-  background: var(--ai);
-}
-
-.timeline-item[data-domain="robotics"]::before {
-  background: var(--robotics);
-}
-
-/* Domain legend */
-.domain-legend span {
-  margin-right: 1rem;
-  font-weight: 600;
-}
-
-.domain-legend .ict { color: var(--ict); }
-.domain-legend .security { color: var(--security); }
-.domain-legend .ai { color: var(--ai); }
-.domain-legend .robotics { color: var(--robotics); }
+/* Domain colors */
+.timeline-item[data-domain="ict"]::before { background: var(--ict); }
+.timeline-item[data-domain="security"]::before { background: var(--security); }
+.timeline-item[data-domain="ai"]::before { background: var(--ai); }
+.timeline-item[data-domain="robotics"]::before { background: var(--robotics); }
 
 /* =========================================================
    CONTACT
@@ -283,7 +319,7 @@ p {
   padding: 2rem;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 14px;
 }
 
 /* =========================================================
@@ -298,157 +334,3 @@ p {
   text-align: center;
   font-size: 0.9rem;
 }
-
-
-
-/* =========================================================
-   HERO COLLAGE BANNER
-========================================================= */
-
-.hero-banner {
-  position: relative;
-  height: 60vh;
-  min-height: 420px;
-  overflow: hidden;
-  margin-bottom: 4rem;
-  border-radius: 16px;
-}
-
-/* Collage grid */
-.banner-collage {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  grid-auto-rows: 180px;
-  gap: 8px;
-  z-index: 1;
-}
-
-.banner-item {
-  overflow: hidden;
-}
-
-.banner-item:nth-child(3n) {
-  grid-row: span 2;
-}
-
-.banner-item:nth-child(4n) {
-  grid-column: span 2;
-}
-
-.banner-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(0.75) contrast(1.05);
-  transition: transform 0.6s ease;
-}
-
-.banner-item img:hover {
-  transform: scale(1.05);
-}
-
-/* Overlay for readability */
-.banner-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0.4),
-    rgba(0,0,0,0.55)
-  );
-  z-index: 2;
-}
-
-/* Text over banner */
-.hero-content {
-  position: relative;
-  z-index: 3;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 3rem;
-  color: white;
-}
-
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.hero-content .hero-subtitle {
-  font-size: 1.1rem;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-}
-
-/* =========================================================
-   Certificates and credentials section
-========================================================= */
-
-
-
-.credentials {
-  margin: 5rem 0;
-}
-
-.credentials h2 {
-  margin-bottom: 2rem;
-}
-
-.credentials-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 1.5rem;
-}
-
-.credential-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.credential-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.credential-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
-}
-
-/* =========================================================
-   Highlight Section
-========================================================= */
-
-
-.highlights {
-  margin: 5rem 0;
-}
-
-.highlights-grid {
-  display: flex;
-  gap: 1.5rem;
-  overflow-x: auto;
-  padding-bottom: 1rem;
-}
-
-.highlight-card {
-  min-width: 300px;
-  border-radius: 14px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-
-.highlight-card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-}
-
