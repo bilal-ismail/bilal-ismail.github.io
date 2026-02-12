@@ -33,6 +33,9 @@ title: Home
   </div>
 </section>
 
+  {% include header.html %}
+
+
 <script>
   const heroImages = [
     "/assets/images/banner/banner-1.jpg",
