@@ -76,7 +76,7 @@ html, body {
   height: 85vh;
   min-height: 650px;
   background-size: contain;
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   transition: background-image 1s ease-in-out;
   display: flex;
