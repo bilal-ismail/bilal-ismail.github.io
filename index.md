@@ -3,30 +3,38 @@ layout: page
 title: Home
 ---
 
-<!-- =========================
-        HERO SECTION
-========================= -->
+<!-- =======================================================
+                        HERO
+======================================================= -->
 
 <section class="hero-banner" id="heroBanner">
-  <div class="hero-content">
-    <div class="hero-subtitle">
-      ICT • Security • AI • Automation • Robotics
+  <div class="hero-grid">
+
+    <div></div>
+
+    <div class="hero-panel">
+      <div class="hero-subtitle">
+        ICT • Security • AI • Automation • Robotics
+      </div>
+
+      <h1>
+        Engineering Secure Infrastructure &
+        Intelligent Systems
+      </h1>
+
+      <p>
+        My work spans enterprise networking, defensive security,
+        and applied artificial intelligence with a growing focus
+        on automation and robotics — emphasizing reliability,
+        safety, and real-world deployment.
+      </p>
     </div>
 
-    <h1>
-      Engineering Secure Infrastructure &
-      Intelligent Systems
-    </h1>
-
-    <p class="hero-description">
-      My work spans enterprise networking, defensive security, and applied artificial intelligence,
-      with a growing focus on automation and robotics.
-    </p>
   </div>
 </section>
 
 <script>
-  const images = [
+  const heroImages = [
     "/assets/images/banner/banner-1.jpg",
     "/assets/images/banner/banner-2.jpg",
     "/assets/images/banner/banner-3.jpg",
@@ -36,79 +44,107 @@ title: Home
     "/assets/images/banner/banner-7.jpg"
   ];
 
-  let current = 0;
+  let heroIndex = 0;
   const hero = document.getElementById("heroBanner");
 
-  function changeBackground() {
-    hero.style.backgroundImage = `url(${images[current]})`;
-    current = (current + 1) % images.length;
+  function rotateHero() {
+    hero.style.backgroundImage = `url(${heroImages[heroIndex]})`;
+    heroIndex = (heroIndex + 1) % heroImages.length;
   }
 
-  changeBackground();
-  setInterval(changeBackground, 5000);
+  rotateHero();
+  setInterval(rotateHero, 6000);
 </script>
 
-<!-- =========================
-        WALL OF IMPACT
-========================= -->
+<!-- =======================================================
+                        IMPACT
+======================================================= -->
 
-<section class="wall">
-  <h2>My Impact</h2>
+<section class="impact-section">
+  <div class="impact-grid">
 
-  <div class="wall-grid">
-    <div class="wall-card">Enterprise Networking</div>
-    <div class="wall-card">Secure Real-Time Applications</div>
-    <div class="wall-card">Defensive Security</div>
-    <div class="wall-card">Artificial Intelligence</div>
-    <div class="wall-card">Automation Systems</div>
-    <div class="wall-card">Robotics Integration</div>
+    <div class="impact-text">
+      <h2>My Impact</h2>
+      <p>
+        Enterprise networking, secure systems, AI-driven automation,
+        and robotics integration — delivered across mission-critical
+        and real-time environments.
+      </p>
+    </div>
+
+    <div class="impact-images">
+      {% assign impact_images = site.static_files | where_exp: "file", "file.path contains '/assets/images/impact/'" %}
+      {% for image in impact_images %}
+        <img src="{{ image.path | relative_url }}" alt="">
+      {% endfor %}
+    </div>
+
   </div>
 </section>
 
-<!-- =========================
-        CERTIFICATES SLIDER
-========================= -->
+<!-- =======================================================
+                        CERTIFICATIONS
+======================================================= -->
 
-<section class="slider-section">
-  <h2>Credentials & Certifications</h2>
+<section class="cert-section">
+  <div class="cert-grid">
 
-  <div class="slider-container">
-    <div class="slider-track">
+    <div class="cert-slider-wrapper">
 
-      {% assign cert_images = site.static_files | where_exp: "file", "file.path contains '/assets/images/certificates/'" %}
+      <button class="slider-btn left" onclick="moveSlide(-1)">&#10094;</button>
 
-      {% for image in cert_images %}
-        <div class="slide">
-          <img src="{{ image.path | relative_url }}" alt="">
-        </div>
-      {% endfor %}
+      <div class="cert-slider" id="certSlider">
+        {% assign cert_images = site.static_files | where_exp: "file", "file.path contains '/assets/images/certificates/'" %}
+        {% for image in cert_images %}
+          <div class="cert-slide">
+            <img src="{{ image.path | relative_url }}" alt="">
+          </div>
+        {% endfor %}
+      </div>
 
-      {% for image in cert_images %}
-        <div class="slide">
-          <img src="{{ image.path | relative_url }}" alt="">
-        </div>
-      {% endfor %}
+      <button class="slider-btn right" onclick="moveSlide(1)">&#10095;</button>
 
     </div>
+
+    <div class="cert-text">
+      <h2>Certifications</h2>
+      <p>
+        Professional credentials and specialized training
+        across cybersecurity, networking, and intelligent systems.
+      </p>
+    </div>
+
   </div>
 </section>
 
-<!-- =========================
-        HIGHLIGHTS SLIDER
-========================= -->
+<script>
+  const slider = document.getElementById("certSlider");
+  let slideIndex = 0;
 
-<section class="slider-section">
+  function moveSlide(direction) {
+    const slides = document.querySelectorAll(".cert-slide");
+    slideIndex += direction;
+
+    if (slideIndex < 0) slideIndex = slides.length - 1;
+    if (slideIndex >= slides.length) slideIndex = 0;
+
+    slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+  }
+</script>
+
+<!-- =======================================================
+                        HIGHLIGHTS
+======================================================= -->
+
+<section class="highlights-section">
   <h2>Highlights</h2>
 
-  <div class="manual-slider">
-
+  <div class="highlights-grid">
     {% assign highlight_images = site.static_files | where_exp: "file", "file.path contains '/assets/images/highlights/'" %}
-
     {% for image in highlight_images %}
-      <div class="manual-slide">
+      <div class="highlight-card">
         <img src="{{ image.path | relative_url }}" alt="">
       </div>
     {% endfor %}
-
   </div>
 </section>
