@@ -17,7 +17,7 @@
 
   {% unless page.url == "/" %}
   <header class="site-header">
-    {% include nav.html %}
+    {% include header.html %}
   </header>
   {% endunless %}
   
@@ -27,7 +27,7 @@
   
   {% if page.url == "/" %}
   <header class="site-header home-nav">
-    {% include nav.html %}
+    {% include header.html %}
   </header>
   {% endif %}
   
