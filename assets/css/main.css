@@ -85,7 +85,10 @@ main {
   margin-left: calc(-50vw + 50%);
   height: 70vh;
   min-height: 520px;
-  background: url('/assets/images/banner/banner-4.jpg') center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
   display: flex;
   align-items: center;
 }
@@ -100,6 +103,7 @@ main {
     rgba(0,0,0,0.6)
   );
 }
+
 
 .hero-content {
   position: relative;
