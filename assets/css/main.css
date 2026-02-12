@@ -1,6 +1,10 @@
 /* =========================================================
-   GLOBAL
+   GLOBAL RESET
 ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
 
 html, body {
   margin: 0;
@@ -8,12 +12,59 @@ html, body {
   font-family: Inter, system-ui, sans-serif;
   background: #ffffff;
   color: #111827;
+  line-height: 1.65;
 }
 
-main {
+.site-main {
+  min-height: 60vh;
+}
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.site-header {
   width: 100%;
-  margin: 0;
-  padding: 0;
+  backdrop-filter: blur(10px);
+  background: rgba(30, 58, 95, 0.85);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.site-header nav {
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.site-header nav a {
+  text-decoration: none;
+  color: #e2e8f0;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 6px;
+  transition: 0.3s ease;
+}
+
+.site-header nav a:hover {
+  color: #93c5fd;
+}
+
+.site-header nav a.active {
+  color: #ffffff;
+}
+
+.site-header nav a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #93c5fd;
+  border-radius: 2px;
 }
 
 /* =========================================================
@@ -22,8 +73,8 @@ main {
 
 .hero-banner {
   width: 100vw;
-  height: 80vh;
-  min-height: 600px;
+  height: 85vh;
+  min-height: 650px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -40,7 +91,7 @@ main {
 
 .hero-panel {
   background: rgba(15, 23, 42, 0.75);
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(8px);
   padding: 4rem;
   color: white;
 }
@@ -54,22 +105,30 @@ main {
 }
 
 .hero-panel h1 {
-  font-size: 2.8rem;
+  font-size: 3rem;
   margin-bottom: 1.5rem;
 }
 
 .hero-panel p {
   color: rgba(255,255,255,0.85);
-  line-height: 1.7;
+}
+
+/* =========================================================
+   SECTIONS GLOBAL
+========================================================= */
+
+section {
+  padding: 6rem 8%;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 /* =========================================================
    IMPACT
 ========================================================= */
-
-.impact-section {
-  padding: 6rem 8%;
-}
 
 .impact-grid {
   display: grid;
@@ -96,8 +155,7 @@ main {
 ========================================================= */
 
 .cert-section {
-  padding: 6rem 8%;
-  background: #f8fafc;
+  background: #f1f5f9;
 }
 
 .cert-grid {
@@ -133,34 +191,28 @@ main {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: #111827;
+  background: #1e3a5f;
   color: white;
   border: none;
   padding: 0.6rem 1rem;
   cursor: pointer;
-  opacity: 0.8;
 }
 
 .slider-btn.left { left: 10px; }
 .slider-btn.right { right: 10px; }
 
 .slider-btn:hover {
-  opacity: 1;
+  background: #2563eb;
 }
 
 /* =========================================================
    HIGHLIGHTS
 ========================================================= */
 
-.highlights-section {
-  padding: 6rem 8%;
-}
-
 .highlights-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
-  margin-top: 2rem;
 }
 
 .highlight-card img {
@@ -168,9 +220,51 @@ main {
   height: 240px;
   object-fit: cover;
   border-radius: 14px;
-  transition: transform 0.4s ease;
+  transition: 0.4s ease;
 }
 
 .highlight-card img:hover {
   transform: scale(1.05);
+}
+
+/* =========================================================
+   OTHER PAGES RESTORE
+========================================================= */
+
+.site-main > *:not(.hero-banner) {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.timeline-item {
+  background: #f8fafc;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.contact-card {
+  background: #f8fafc;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer {
+  background: #0f172a;
+  color: #94a3b8;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
 }
