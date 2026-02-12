@@ -7,53 +7,27 @@
 </head>
 <body>
 
-  <!-- {% include header.html %}
-
-  <main class="site-main">
-    {{ content }}
-  </main>
-
-  {% include footer.html %} -->
-
-
   
   {% if page.url == "/" %}
 
+  
     <main class="site-main">
       {{ content }}
     </main>
-
-    <header class="site-header home-nav">
-      <nav>
-        <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">Home</a>
-        <a href="{{ '/experience/' | relative_url }}" class="{% if page.url contains '/experience' %}active{% endif %}">Experience</a>
-        <a href="{{ '/education/' | relative_url }}" class="{% if page.url contains '/education' %}active{% endif %}">Education</a>
-        <a href="{{ '/affiliations/' | relative_url }}" class="{% if page.url contains '/affiliations' %}active{% endif %}">Affiliations</a>
-        <a href="{{ '/contact/' | relative_url }}" class="{% if page.url contains '/contact' %}active{% endif %}">Contact</a>
-      </nav>
-    </header>
-
+  
   {% else %}
 
-    <header class="site-header">
-      <nav>
-        <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">Home</a>
-        <a href="{{ '/experience/' | relative_url }}" class="{% if page.url contains '/experience' %}active{% endif %}">Experience</a>
-        <a href="{{ '/education/' | relative_url }}" class="{% if page.url contains '/education' %}active{% endif %}">Education</a>
-        <a href="{{ '/affiliations/' | relative_url }}" class="{% if page.url contains '/affiliations' %}active{% endif %}">Affiliations</a>
-        <a href="{{ '/contact/' | relative_url }}" class="{% if page.url contains '/contact' %}active{% endif %}">Contact</a>
-      </nav>
-    </header>
-
+    {% include header.html %}
+  
     <main class="site-main">
       {{ content }}
     </main>
+
 
   {% endif %}
 
-  <footer class="site-footer">
-    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
-  </footer>
+  
+  {% include footer.html %}
 
 
 
