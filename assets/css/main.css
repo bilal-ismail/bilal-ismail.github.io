@@ -136,9 +136,7 @@ main {
   z-index: 1;
 }
 
-/* Make banner-4 and banner-6 wider */
-.banner-item img[src*="banner-4"],
-.banner-item img[src*="banner-6"] {
+.banner-item.wide {
   grid-column: span 2;
 }
 
