@@ -298,3 +298,81 @@ p {
   text-align: center;
   font-size: 0.9rem;
 }
+
+
+
+/* =========================================================
+   HERO COLLAGE BANNER
+========================================================= */
+
+.hero-banner {
+  position: relative;
+  height: 60vh;
+  min-height: 420px;
+  overflow: hidden;
+  margin-bottom: 4rem;
+  border-radius: 16px;
+}
+
+/* Collage grid */
+.banner-collage {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 8px;
+  z-index: 1;
+}
+
+.banner-item {
+  overflow: hidden;
+}
+
+.banner-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.75) contrast(1.05);
+  transition: transform 0.6s ease;
+}
+
+.banner-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Overlay for readability */
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0.55)
+  );
+  z-index: 2;
+}
+
+/* Text over banner */
+.hero-content {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content .hero-subtitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
+
