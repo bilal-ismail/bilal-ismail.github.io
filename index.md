@@ -33,6 +33,7 @@ title: Home
   </div>
 </section>
 
+{% include header.html %}
 
 
 <script>
