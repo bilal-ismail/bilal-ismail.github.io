@@ -33,7 +33,6 @@ title: Home
   </div>
 </section>
 
-{% include header.html %}
 
 
 <script>
@@ -64,26 +63,33 @@ title: Home
 ======================================================= -->
 
 <section class="impact-section">
+  <h2>My Impact</h2>
+
   <div class="impact-grid">
 
-    <div class="impact-text">
-      <h2>My Impact</h2>
-      <p>
-        Enterprise networking, secure systems, AI-driven automation,
-        and robotics integration — delivered across mission-critical
-        and real-time environments.
-      </p>
+    <div class="impact-card network">
+      Enterprise Networking
     </div>
 
-    <div class="impact-images">
-      {% assign impact_images = site.static_files | where_exp: "file", "file.path contains '/assets/images/impact/'" %}
-      {% for image in impact_images %}
-        <img src="{{ image.path | relative_url }}" alt="">
-      {% endfor %}
+    <div class="impact-card security">
+      Cybersecurity & SOC
+    </div>
+
+    <div class="impact-card ict">
+      ICT Infrastructure
+    </div>
+
+    <div class="impact-card automation">
+      Automation Systems
+    </div>
+
+    <div class="impact-card ai">
+      Artificial Intelligence
     </div>
 
   </div>
 </section>
+
 
 <!-- =======================================================
                         CERTIFICATIONS
