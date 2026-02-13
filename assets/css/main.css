@@ -323,3 +323,57 @@ body.inner ol {
   padding: 1.5rem;
   font-size: 0.9rem;
 }
+
+/* =========================================================
+   CONTACT PAGE ENHANCEMENT
+========================================================= */
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.contact-card {
+  width: 100%;
+  max-width: 500px;
+  padding: 2.5rem;
+  border-radius: 16px;
+  background: rgba(255, 244, 200, 0.35);
+  border: 1px solid rgba(234, 179, 8, 0.3);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+}
+
+.contact-item {
+  margin-bottom: 2rem;
+}
+
+.contact-item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #b45309;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.contact-value a {
+  text-decoration: none;
+  color: #1e3a5f;
+  font-weight: 500;
+}
+
+.contact-value a:hover {
+  color: #2563eb;
+}
+
