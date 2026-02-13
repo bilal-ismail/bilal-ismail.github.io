@@ -1,53 +1,65 @@
 <header class="site-header">
   <nav class="nav">
-    <a href="{{ '/' | relative_url }}"
-       class="nav-link {% if page.url == '/' %}active{% endif %}">
-      Home
-    </a>
 
-    <a href="{{ '/work' | relative_url }}"
-       class="nav-link {% if page.url contains '/work' %}active{% endif %}">
-      Work
-    </a>
+    <div class="nav-brand">
+      <a href="{{ '/' | relative_url }}">
+        {{ site.title }}
+      </a>
+    </div>
 
-    <a href="{{ '/education' | relative_url }}"
-       class="nav-link {% if page.url contains '/education' %}active{% endif %}">
-      Education
-    </a>
+    <div class="nav-links">
 
-    <a href="{{ '/publications' | relative_url }}"
-       class="nav-link {% if page.url contains '/publications' %}active{% endif %}">
-      Publications
-    </a>
-      
-    <a href="{{ '/patents' | relative_url }}"
-       class="nav-link {% if page.url contains '/patents' %}active{% endif %}">
-      Patents
-    </a>
+      <a href="{{ '/' | relative_url }}"
+         class="nav-link {% if page.url == '/' %}active{% endif %}">
+        Home
+      </a>
 
-    <a href="{{ '/projects' | relative_url }}"
-       class="nav-link {% if page.url contains '/projects' %}active{% endif %}">
-      Projects
-    </a>
+      <a href="{{ '/work' | relative_url }}"
+         class="nav-link {% if page.url contains '/work' %}active{% endif %}">
+        Work
+      </a>
 
-    <a href="{{ '/affiliations' | relative_url }}"
-       class="nav-link {% if page.url contains '/affiliations' %}active{% endif %}">
-      Affiliations
-    </a>
+      <a href="{{ '/education' | relative_url }}"
+         class="nav-link {% if page.url contains '/education' %}active{% endif %}">
+        Education
+      </a>
 
-    <a href="{{ '/certifications' | relative_url }}"
-       class="nav-link {% if page.url contains '/certifications' %}active{% endif %}">
-      Certifications
-    </a>
+      <a href="{{ '/publications' | relative_url }}"
+         class="nav-link {% if page.url contains '/publications' %}active{% endif %}">
+        Publications
+      </a>
 
-    <a href="{{ '/hobbies' | relative_url }}"
-       class="nav-link {% if page.url contains '/hobbies' %}active{% endif %}">
-      Hobbies
-    </a>
+      <a href="{{ '/patents' | relative_url }}"
+         class="nav-link {% if page.url contains '/patents' %}active{% endif %}">
+        Patents
+      </a>
+
+      <a href="{{ '/projects' | relative_url }}"
+         class="nav-link {% if page.url contains '/projects' %}active{% endif %}">
+        Projects
+      </a>
+
+      <a href="{{ '/affiliations' | relative_url }}"
+         class="nav-link {% if page.url contains '/affiliations' %}active{% endif %}">
+        Affiliations
+      </a>
+
+      <a href="{{ '/certifications' | relative_url }}"
+         class="nav-link {% if page.url contains '/certifications' %}active{% endif %}">
+        Certifications
+      </a>
+
+      <a href="{{ '/hobbies' | relative_url }}"
+         class="nav-link {% if page.url contains '/hobbies' %}active{% endif %}">
+        Hobbies
+      </a>
 
       <a href="{{ '/contact' | relative_url }}"
-       class="nav-link {% if page.url contains '/contact' %}active{% endif %}">
-      Contact
-    </a>
+         class="nav-link contact-btn {% if page.url contains '/contact' %}active{% endif %}">
+        Contact
+      </a>
+
+    </div>
+
   </nav>
 </header>
